@@ -6,16 +6,16 @@
 @media(max-width:390px){.site-header nav{gap:10px;font-size:8px}.video-card{width:100%}.humanoid-grid .video-card:last-child{width:100%}.hero-subtitle{font-size:25px}.authors{gap:12px;font-size:10px}.hero-copy{bottom:19%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-background,.site-header{transition:none}}
 
-/* Official Harvard crimson accents and unaltered institutional artwork. */
+/* Official Harvard crimson accents and institutional artwork. */
 .affiliation-logos{display:flex;align-items:center;gap:22px;margin-top:22px;width:fit-content}
 .affiliation-logos a{display:flex;align-items:center;justify-content:center}
 .affiliation-logos img{display:block;object-fit:contain;width:100%;height:auto}
-.harvard-logo{width:99px;flex-shrink:0}
+.harvard-logo{width:48px;flex-shrink:0}
 .group-logo{width:290px;background:#fff;padding:6px 8px;border-radius:2px}
 .logo-divider{height:37px;width:1px;background:#ffffff38;flex-shrink:0}
 .hero-copy .hero-action{margin-top:23px}
 .section-index::before{content:'';display:inline-block;vertical-align:middle;width:22px;height:2px;background:var(--crimson);margin-right:10px}
 ::selection{background:#a51c30;color:#fff}
-@media(max-width:650px){.affiliation-logos{gap:13px;margin-top:18px}.harvard-logo{width:74px}.group-logo{width:218px;padding:4px 6px}.logo-divider{height:29px}.hero-copy .hero-action{margin-top:20px}.hero-copy{bottom:15%}}
-@media(max-width:390px){.affiliation-logos{gap:11px}.harvard-logo{width:67px}.group-logo{width:204px}.hero-copy{bottom:14%}}
-@media(max-height:700px) and (min-width:651px){.hero-copy{bottom:13%}.hero-copy h1{font-size:110px;margin:16px 0}.hero-subtitle{font-size:29px}.authors{margin-top:18px}.affiliation-logos{margin-top:15px}.harvard-logo{width:80px}.group-logo{width:255px}.hero-copy .hero-action{margin-top:16px}}
+@media(max-width:650px){.affiliation-logos{gap:13px;margin-top:18px}.harvard-logo{width:37px}.group-logo{width:218px;padding:4px 6px}.logo-divider{height:29px}.hero-copy .hero-action{margin-top:20px}.hero-copy{bottom:15%}}
+@media(max-width:390px){.affiliation-logos{gap:11px}.harvard-logo{width:35px}.group-logo{width:204px}.hero-copy{bottom:14%}}
+@media(max-height:700px) and (min-width:651px){.hero-copy{bottom:13%}.hero-copy h1{font-size:110px;margin:16px 0}.hero-subtitle{font-size:29px}.authors{margin-top:18px}.affiliation-logos{margin-top:15px}.harvard-logo{width:42px}.group-logo{width:255px}.hero-copy .hero-action{margin-top:16px}}

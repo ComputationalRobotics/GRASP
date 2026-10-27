@@ -43,6 +43,6 @@ No private Overleaf link, inferred author affiliations, or unpublished paper lin
 
 Harvard crimson: `#A51C30`, per the [Harvard SEAS palette](https://seas.harvard.edu/office-communications/brand-style-guide/color-palette). Light text is retained over dark video for legibility.
 
-Unaltered institutional logo sources:
+Institutional logo sources (the Harvard shield is extracted from the official SVG without changing its paths; the wordmark is omitted):
 - Harvard University: https://www.harvard.edu/wp-content/themes/core/assets/img/theme/branding-assets/footer-logo.svg
 - Computational Robotics Group: https://computationalrobotics.seas.harvard.edu/lab_logo-horz-white-01.PNG
