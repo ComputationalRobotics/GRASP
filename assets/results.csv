@@ -1,0 +1,12 @@
+subset,method,success_percent_and_count,position_mean_cm,position_median_cm,rotation_mean_rad,rotation_median_rad,finite_error_pairs
+full_500,GRASP,95.60 (478/500),3.36,2.15,0.116,0.090,494
+shared_100,GRASP,94.00 (94/100),3.21,2.24,0.118,0.101,97
+shared_100,DAID full,86.00 (86/100),4.55,3.73,0.260,0.163,100
+shared_100,DAID annealed,50.00 (50/100),125.02,7.93,0.492,0.345,96
+shared_100,SPIDER mjwp,45.00 (45/100),54293.09,7.20,0.596,0.437,93
+shared_100,SPIDER ACT,56.00 (56/100),9.89,8.24,0.309,0.169,97
+longer_than_5s_61,GRASP,91.80 (56/61),3.69,2.48,0.132,0.102,59
+longer_than_5s_61,DAID full,85.25 (52/61),5.14,4.13,0.308,0.217,61
+longer_than_5s_61,DAID annealed,45.90 (28/61),12.23,9.89,0.478,0.351,58
+longer_than_5s_61,SPIDER mjwp,44.26 (27/61),3088.17,9.65,0.513,0.419,56
+longer_than_5s_61,SPIDER ACT,40.98 (25/61),12.67,10.41,0.429,0.330,59
