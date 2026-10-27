@@ -1,0 +1,138 @@
+[
+  {
+    "id": "whiteboard-erasing",
+    "title": "Whiteboard erasing",
+    "group": "dex",
+    "src": "media/whiteboard-erasing.mp4",
+    "poster": "media/whiteboard-erasing.jpg",
+    "speed": 2
+  },
+  {
+    "id": "whiteboard-writing",
+    "title": "Writing",
+    "group": "dex",
+    "src": "media/whiteboard-writing.mp4",
+    "poster": "media/whiteboard-writing.jpg",
+    "speed": 2
+  },
+  {
+    "id": "tool-handling",
+    "title": "Tape-measure handling",
+    "group": "dex",
+    "src": "media/tool-handling.mp4",
+    "poster": "media/tool-handling.jpg",
+    "speed": 2
+  },
+  {
+    "id": "cup-handling",
+    "title": "Cup handling",
+    "group": "dex",
+    "src": "media/cup-handling.mp4",
+    "poster": "media/cup-handling.jpg",
+    "speed": 2
+  },
+  {
+    "id": "basket-handling",
+    "title": "Basket handling",
+    "group": "dex",
+    "src": "media/basket-handling.mp4",
+    "poster": "media/basket-handling.jpg",
+    "speed": 2
+  },
+  {
+    "id": "object-interaction",
+    "title": "Object interaction",
+    "group": "dex",
+    "src": "media/object-interaction.mp4",
+    "poster": "media/object-interaction.jpg",
+    "speed": 2
+  },
+  {
+    "id": "pouring",
+    "title": "Pouring",
+    "group": "dex",
+    "src": "media/pouring.mp4",
+    "poster": "media/pouring.jpg",
+    "speed": 2
+  },
+  {
+    "id": "bimanual-coordination",
+    "title": "Bimanual coordination",
+    "group": "dex",
+    "src": "media/bimanual-coordination.mp4",
+    "poster": "media/bimanual-coordination.jpg",
+    "speed": 2
+  },
+  {
+    "id": "pan-handling",
+    "title": "Pan handling",
+    "group": "dex",
+    "src": "media/pan-handling.mp4",
+    "poster": "media/pan-handling.jpg",
+    "speed": 2
+  },
+  {
+    "id": "soft-object",
+    "title": "Soft-object manipulation",
+    "group": "dex",
+    "src": "media/soft-object.mp4",
+    "poster": "media/soft-object.jpg",
+    "speed": 2
+  },
+  {
+    "id": "dancing",
+    "title": "Dancing",
+    "group": "humanoid",
+    "src": "media/dancing.mp4",
+    "poster": "media/dancing.jpg",
+    "speed": 2
+  },
+  {
+    "id": "kick-box",
+    "title": "Kicking a box",
+    "group": "humanoid",
+    "src": "media/kick-box.mp4",
+    "poster": "media/kick-box.jpg",
+    "speed": 2
+  },
+  {
+    "id": "kick-soccer",
+    "title": "Kicking a ball",
+    "group": "humanoid",
+    "src": "media/kick-soccer.mp4",
+    "poster": "media/kick-soccer.jpg",
+    "speed": 2
+  },
+  {
+    "id": "pick-box",
+    "title": "Lifting a box",
+    "group": "humanoid",
+    "src": "media/pick-box.mp4",
+    "poster": "media/pick-box.jpg",
+    "speed": 2
+  },
+  {
+    "id": "push-box",
+    "title": "Pushing a box",
+    "group": "humanoid",
+    "src": "media/push-box.mp4",
+    "poster": "media/push-box.jpg",
+    "speed": 2
+  },
+  {
+    "id": "push-box-2",
+    "title": "Pushing a box \u00b7 second view",
+    "group": "humanoid",
+    "src": "media/push-box-2.mp4",
+    "poster": "media/push-box-2.jpg",
+    "speed": 2
+  },
+  {
+    "id": "walking",
+    "title": "Walking",
+    "group": "humanoid",
+    "src": "media/walking.mp4",
+    "poster": "media/walking.jpg",
+    "speed": 2
+  }
+]
