@@ -38,3 +38,11 @@ Offscreen videos are paused; gallery clips are loaded near the viewport. The glo
 - `media/`: web video and poster derivatives.
 
 No private Overleaf link, inferred author affiliations, or unpublished paper link is exposed. The structural reference is InterMimicGen; the implementation and all displayed media belong to this project. Assets from the earlier figure-based draft remain available but are no longer displayed.
+
+## Institutional identity
+
+Harvard crimson: `#A51C30`, per the [Harvard SEAS palette](https://seas.harvard.edu/office-communications/brand-style-guide/color-palette). Light text is retained over dark video for legibility.
+
+Unaltered institutional logo sources:
+- Harvard University: https://www.harvard.edu/wp-content/themes/core/assets/img/theme/branding-assets/footer-logo.svg
+- Computational Robotics Group: https://computationalrobotics.seas.harvard.edu/lab_logo-horz-white-01.PNG
