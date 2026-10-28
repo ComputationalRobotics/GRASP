@@ -12,12 +12,14 @@ Run `python3 -m http.server 8765` here and open http://localhost:8765.
 
 ## Layout
 
-The first screen remains pinned while scrolling through four background stages:
+The page opens on unobstructed video. The first downward scroll slides in the title, authors, institutional logos, and navigation while the background remains pinned. Four backgrounds rotate independently every 7 seconds:
 
 1. Real dex — dexterous-hand demo mosaic.
 2. Real humanoid — humanoid demo mosaic.
 3. Sim dex — empty, reserved for future simulation video.
 4. Sim humanoid — empty, reserved for future simulation video.
+
+Pagination buttons change the background without moving the page and restart the 7-second interval. The global pause button, reduced-motion preference, hidden tab, or offscreen hero suspend automatic rotation. The two simulation stages retain their empty placeholders until footage is available.
 
 Below the introduction, real-world demonstrations are separated into dexterous-hand (10 videos) and humanoid (7 videos) sections. The two simulation galleries intentionally remain empty.
 

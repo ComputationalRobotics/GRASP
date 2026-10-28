@@ -19,3 +19,19 @@
 @media(max-width:650px){.affiliation-logos{gap:13px;margin-top:18px}.harvard-logo{width:37px}.group-logo{width:218px;padding:4px 6px}.logo-divider{height:29px}.hero-copy .hero-action{margin-top:20px}.hero-copy{bottom:15%}}
 @media(max-width:390px){.affiliation-logos{gap:11px}.harvard-logo{width:35px}.group-logo{width:204px}.hero-copy{bottom:14%}}
 @media(max-height:700px) and (min-width:651px){.hero-copy{bottom:13%}.hero-copy h1{font-size:110px;margin:16px 0}.hero-subtitle{font-size:29px}.authors{margin-top:18px}.affiliation-logos{margin-top:15px}.harvard-logo{width:42px}.group-logo{width:255px}.hero-copy .hero-action{margin-top:16px}}
+
+/* Video-only opening; scrolling reveals the introduction, independently of slides. */
+:root{--hero-reveal:0}
+.hero-scroll{height:210svh}
+.hero-background{opacity:1;visibility:hidden;transform:translateX(100%);transition:transform .9s cubic-bezier(.22,.61,.36,1)}
+.hero-background.active{visibility:visible;transform:translateX(0)}
+.hero-background.previous{visibility:visible;transform:translateX(-100%)}
+.hero-shade{opacity:var(--hero-reveal);pointer-events:none}
+.hero-copy,.hero-category,.site-header{opacity:var(--hero-reveal);visibility:hidden;pointer-events:none}
+.hero-copy{transform:translateY(calc((1 - var(--hero-reveal))*90px))}
+.hero-category{transform:translateY(calc((1 - var(--hero-reveal))*35px))}
+.site-header{transform:translateY(calc((1 - var(--hero-reveal))*-24px))}
+.is-introduced .hero-copy,.is-introduced .hero-category,.is-introduced .site-header{visibility:visible;pointer-events:auto}
+.hero-bottom{justify-content:center}.hero-bottom>span:first-child{max-width:none}
+.scroll-cue{color:white;text-shadow:0 1px 8px #000}
+@media(prefers-reduced-motion:reduce){.hero-background{transition:none}.hero-copy,.hero-category,.site-header{transform:none}}
