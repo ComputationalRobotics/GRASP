@@ -23,7 +23,7 @@ Below the introduction, real-world demonstrations are separated into dexterous-h
 
 ## Videos
 
-The supplied GRASP videos are converted to H.264 MP4 at 960 × 540, 24 fps, **2× source speed**, with audio and source metadata removed. The originals are unchanged. The playback rate is baked into the files: JavaScript should not double it again. Hero videos are 16-second mosaics of selected real clips. Short clips loop within the mosaics.
+The supplied GRASP videos are converted to H.264 MP4 at 960 × 540, 24 fps, **2× source speed**, with audio and source metadata removed. The originals are unchanged. The playback rate is baked into the files: JavaScript should not double it again. Hero videos are 16-second, 1920 × 1080 mosaics with 3 rows and 4 columns. The middle row’s two central tiles feature pumpkin-lantern lifting and whiteboard erasing for dex, and box lifting and pushing for humanoid. Existing clips fill the remaining 2 dex / 5 humanoid slots as temporary repeats. `hero-layout.json` records the exact row-major arrangement; rebuild with `python3 scripts/build-hero.py /path/to/ffmpeg`. The existing 2× clips are used without further acceleration. Short clips loop within the mosaics.
 
 `media.json` lists the title, group, video, poster, and encoded speed for each clip. To add simulation demos, extend the gallery containers and manifest group handling in `app.js`, and replace the corresponding empty hero background in `index.html` with a video.
 

@@ -1,0 +1,12 @@
+{
+  "dex": [
+    ["whiteboard-writing", "tool-handling", "cup-handling", "pouring"],
+    ["object-interaction", "basket-handling", "whiteboard-erasing", "bimanual-coordination"],
+    ["pan-handling", "soft-object", "whiteboard-writing", "pouring"]
+  ],
+  "humanoid": [
+    ["dancing", "kick-box", "kick-soccer", "walking"],
+    ["push-box-2", "pick-box", "push-box", "dancing"],
+    ["walking", "kick-soccer", "kick-box", "push-box-2"]
+  ]
+}
