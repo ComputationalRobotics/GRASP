@@ -35,3 +35,19 @@
 .hero-bottom{justify-content:center}.hero-bottom>span:first-child{max-width:none}
 .scroll-cue{color:white;text-shadow:0 1px 8px #000}
 @media(prefers-reduced-motion:reduce){.hero-background{transition:none}.hero-copy,.hero-category,.site-header{transform:none}}
+
+/* OakInk2 simulation wall: hovering reveals the link to the full visualization. */
+.sim-wall{display:block;position:relative;border:1px solid var(--line);border-radius:2px;overflow:hidden;background:#fff}
+.sim-wall-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line)}
+.sim-tile{position:relative;aspect-ratio:16/9;background:#fff}
+.sim-tile video{object-fit:cover;background:#fff}
+.sim-tile .speed-badge{color:#5c5357;background:#ffffffd9;border-color:var(--line)}
+.sim-wall-overlay{position:absolute;inset:0;display:grid;place-items:center;background:#ffffffa6;opacity:0;transition:opacity .25s;pointer-events:none}
+.sim-wall-overlay span{padding:13px 26px;border-radius:30px;background:var(--crimson);color:#fff;font-size:13px;font-weight:700;box-shadow:0 10px 30px #a51c3038;transform:translateY(8px);transition:transform .25s}
+.sim-wall:hover .sim-wall-overlay,.sim-wall:focus-visible .sim-wall-overlay{opacity:1}
+.sim-wall:hover .sim-wall-overlay span,.sim-wall:focus-visible .sim-wall-overlay span{transform:none}
+.sim-wall-link{display:inline-block;margin-top:16px;font-size:12px;font-weight:700;color:var(--crimson)}
+.sim-wall-link:hover{text-decoration:underline;text-underline-offset:4px}
+@media(hover:none){.sim-wall-overlay{opacity:1;background:transparent}.sim-wall-overlay span{transform:none;font-size:11px;padding:9px 17px}}
+@media(max-width:650px){.sim-wall-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sim-tile:nth-child(n+9){display:none}.sim-wall-link{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.sim-wall-overlay,.sim-wall-overlay span{transition:none}}

@@ -134,5 +134,133 @@
     "src": "media/walking.mp4",
     "poster": "media/walking.jpg",
     "speed": 2
+  },
+  {
+    "id": "oakbi_934_pour",
+    "title": "Pour",
+    "group": "sim-dex",
+    "src": "media/oakink2/videos/oakbi_934_pour.mp4",
+    "poster": "media/oakink2/posters/oakbi_934_pour.jpg",
+    "speed": 1.6
+  },
+  {
+    "id": "oakbi_741_stir",
+    "title": "Stir",
+    "group": "sim-dex",
+    "src": "media/oakink2/videos/oakbi_741_stir.mp4",
+    "poster": "media/oakink2/posters/oakbi_741_stir.jpg",
+    "speed": 1.3
+  },
+  {
+    "id": "oakbi_315_cut",
+    "title": "Cut",
+    "group": "sim-dex",
+    "src": "media/oakink2/videos/oakbi_315_cut.mp4",
+    "poster": "media/oakink2/posters/oakbi_315_cut.jpg",
+    "speed": 1.6
+  },
+  {
+    "id": "oakbi_100_spread",
+    "title": "Spread",
+    "group": "sim-dex",
+    "src": "media/oakink2/videos/oakbi_100_spread.mp4",
+    "poster": "media/oakink2/posters/oakbi_100_spread.jpg",
+    "speed": 1.8
+  },
+  {
+    "id": "oakbi_673_squeeze_tooth_paste",
+    "title": "Squeeze tooth paste",
+    "group": "sim-dex",
+    "src": "media/oakink2/videos/oakbi_673_squeeze_tooth_paste.mp4",
+    "poster": "media/oakink2/posters/oakbi_673_squeeze_tooth_paste.jpg",
+    "speed": 1.2
+  },
+  {
+    "id": "oakbi_020_screw",
+    "title": "Screw",
+    "group": "sim-dex",
+    "src": "media/oakink2/videos/oakbi_020_screw.mp4",
+    "poster": "media/oakink2/posters/oakbi_020_screw.jpg",
+    "speed": 2.7
+  },
+  {
+    "id": "oakbi_1032_uncap",
+    "title": "Uncap",
+    "group": "sim-dex",
+    "src": "media/oakink2/videos/oakbi_1032_uncap.mp4",
+    "poster": "media/oakink2/posters/oakbi_1032_uncap.jpg",
+    "speed": 1.0
+  },
+  {
+    "id": "oakbi_132_ignite_alcohol_lamp",
+    "title": "Ignite alcohol lamp",
+    "group": "sim-dex",
+    "src": "media/oakink2/videos/oakbi_132_ignite_alcohol_lamp.mp4",
+    "poster": "media/oakink2/posters/oakbi_132_ignite_alcohol_lamp.jpg",
+    "speed": 1.2
+  },
+  {
+    "id": "oakbi_034_insert_usb",
+    "title": "Insert USB",
+    "group": "sim-dex",
+    "src": "media/oakink2/videos/oakbi_034_insert_usb.mp4",
+    "poster": "media/oakink2/posters/oakbi_034_insert_usb.jpg",
+    "speed": 1.4
+  },
+  {
+    "id": "oakbi_039_plug_in_power_plug",
+    "title": "Plug in power plug",
+    "group": "sim-dex",
+    "src": "media/oakink2/videos/oakbi_039_plug_in_power_plug.mp4",
+    "poster": "media/oakink2/posters/oakbi_039_plug_in_power_plug.jpg",
+    "speed": 1.2
+  },
+  {
+    "id": "oakbi_289_scoop",
+    "title": "Scoop",
+    "group": "sim-dex",
+    "src": "media/oakink2/videos/oakbi_289_scoop.mp4",
+    "poster": "media/oakink2/posters/oakbi_289_scoop.jpg",
+    "speed": 2.9
+  },
+  {
+    "id": "oakbi_009_wipe",
+    "title": "Wipe",
+    "group": "sim-dex",
+    "src": "media/oakink2/videos/oakbi_009_wipe.mp4",
+    "poster": "media/oakink2/posters/oakbi_009_wipe.jpg",
+    "speed": 3.6
+  },
+  {
+    "id": "oakbi_501_brush_whiteboard",
+    "title": "Brush whiteboard",
+    "group": "sim-dex",
+    "src": "media/oakink2/videos/oakbi_501_brush_whiteboard.mp4",
+    "poster": "media/oakink2/posters/oakbi_501_brush_whiteboard.jpg",
+    "speed": 1.3
+  },
+  {
+    "id": "oakbi_1107_remove_lid",
+    "title": "Remove lid",
+    "group": "sim-dex",
+    "src": "media/oakink2/videos/oakbi_1107_remove_lid.mp4",
+    "poster": "media/oakink2/posters/oakbi_1107_remove_lid.jpg",
+    "speed": 1.2
+  },
+  {
+    "id": "oakbi_245_pull_out_drawer",
+    "title": "Pull out drawer",
+    "group": "sim-dex",
+    "src": "media/oakink2/videos/oakbi_245_pull_out_drawer.mp4",
+    "poster": "media/oakink2/posters/oakbi_245_pull_out_drawer.jpg",
+    "speed": 1.0
+  },
+  {
+    "id": "oakbi_1233_open_gate",
+    "title": "Open gate",
+    "group": "sim-dex",
+    "src": "media/oakink2/videos/oakbi_1233_open_gate.mp4",
+    "poster": "media/oakink2/posters/oakbi_1233_open_gate.jpg",
+    "speed": 1.0
   }
 ]

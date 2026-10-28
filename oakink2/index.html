@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="All 1,265 successful GRASP trajectories on OakInk2 bimanual tasks, replayed in simulation with two Sharpa hands.">
+<meta name="theme-color" content="#ffffff">
+<title>GRASP · OakInk2 Visualizer</title>
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="viewer.css?v=1"><script defer src="viewer.js?v=1"></script>
+</head>
+<body>
+<header class="topbar">
+ <a class="back" href="../#sim-dex">← GRASP</a>
+ <div class="title-block"><h1>OakInk2 Visualizer</h1><p>1,265 successful bimanual trajectories, replayed in simulation</p></div>
+ <span class="topbar-count" id="count" aria-live="polite"></span>
+</header>
+<p class="display-note">Each clip replays the trajectory GRASP executed in MuJoCo with two Sharpa hands; the right-hand object is <strong class="amber">amber</strong> and the left-hand object <strong class="blue">blue</strong>. Clips longer than 8 s are sped up to fit, with the speed marked on the clip. The numbers under each clip are its object tracking error (position · orientation).</p>
+<main class="layout">
+ <aside class="sidebar">
+  <label class="search"><span>Search</span><input id="search" type="search" placeholder="Task name or ID" autocomplete="off"></label>
+  <section class="filter-group"><h2>Motion types</h2><ul class="filter-list" id="motions"></ul></section>
+  <section class="filter-group"><h2>Order</h2>
+   <div class="order"><select id="sort" aria-label="Order clips"><option value="shuffle">Shuffled</option><option value="id">Task ID</option><option value="error">Lowest position error</option></select><button type="button" id="shuffle">↻ Shuffle</button></div>
+  </section>
+ </aside>
+ <section class="results" aria-label="Trajectories">
+  <div class="grid" id="grid"></div>
+  <p class="empty" id="empty" hidden>No trajectory matches these filters.</p>
+  <button type="button" class="more" id="more" hidden></button>
+ </section>
+</main>
+<dialog class="viewer" id="viewer" aria-labelledby="viewer-title">
+ <div class="viewer-media"><video id="viewer-video" muted loop playsinline controls></video></div>
+ <div class="viewer-info">
+  <div><h2 id="viewer-title"></h2><p id="viewer-meta"></p></div>
+  <div class="viewer-actions"><button type="button" id="viewer-prev" aria-label="Previous trajectory">←</button><button type="button" id="viewer-next" aria-label="Next trajectory">→</button><button type="button" id="viewer-close" aria-label="Close">✕</button></div>
+ </div>
+</dialog>
+<footer><a href="../">GRASP: Recovering Gradients for Contact-Rich Trajectory Optimization</a><span>Gallery layout after the T-Rex and DROID dataset visualizers.</span></footer>
+<noscript><p class="no-script">Enable JavaScript to browse the trajectories.</p></noscript>
+</body>
+</html>
