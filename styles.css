@@ -48,6 +48,13 @@
 .sim-wall:hover .sim-wall-overlay span,.sim-wall:focus-visible .sim-wall-overlay span{transform:none}
 .sim-wall-link{display:inline-block;margin-top:16px;font-size:12px;font-weight:700;color:var(--crimson)}
 .sim-wall-link:hover{text-decoration:underline;text-underline-offset:4px}
+.sim-wall-grid[hidden]{display:none}
+.robot-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.robot-tabs button{padding:8px 16px;border:1px solid var(--line);border-radius:30px;background:#fff;color:#524d45;font-size:12px;font-weight:700;transition:background .2s,border-color .2s,color .2s}
+.robot-tabs button span{margin-left:7px;font-weight:500;color:var(--muted)}
+.robot-tabs button:hover{border-color:var(--crimson);color:var(--crimson)}
+.robot-tabs button[aria-selected="true"]{background:var(--crimson);border-color:var(--crimson);color:#fff}
+.robot-tabs button[aria-selected="true"] span{color:var(--on-dark)}
 @media(hover:none){.sim-wall-overlay{opacity:1;background:transparent}.sim-wall-overlay span{transform:none;font-size:11px;padding:9px 17px}}
 @media(max-width:650px){.sim-wall-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sim-tile:nth-child(n+9){display:none}.sim-wall-link{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.sim-wall-overlay,.sim-wall-overlay span{transition:none}}

@@ -5,7 +5,7 @@
 <meta name="description" content="GRASP: Recovering Gradients for Contact-Rich Trajectory Optimization. Real-world dexterous-hand and humanoid demonstrations.">
 <meta name="theme-color" content="#080808"><meta property="og:title" content="GRASP — Recovering Gradients for Contact-Rich Trajectory Optimization"><meta property="og:type" content="website">
 <title>GRASP · Contact-Rich Trajectory Optimization</title>
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=6"><script defer src="app.js?v=5"></script>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=7"><script defer src="app.js?v=6"></script>
 </head>
 <body>
 <a class="skip-link" href="#real-dex">Skip to demonstrations</a>
@@ -54,8 +54,10 @@
 </section>
 <section class="demo-section simulation-section page-width" id="sim-humanoid">
  <div class="section-intro"><p class="section-index">04 / Sim humanoid</p><h2><span>GRASP</span><br>for humanoid simulation.</h2></div>
- <div class="section-toolbar"><span>Simulation demonstrations</span></div>
- <div class="placeholder-grid" aria-label="Reserved space for humanoid simulation demonstrations"><div></div><div></div><div></div><div></div><div></div><div></div></div>
+ <div class="section-toolbar"><span>16 selected per robot from 100 humanoid trajectories</span><span>Real-time playback</span></div>
+ <div class="robot-tabs" role="tablist" aria-label="Humanoid robot"><button type="button" role="tab" id="tab-g1" aria-controls="sim-humanoid-g1-gallery" aria-selected="true">Unitree G1<span>50</span></button><button type="button" role="tab" id="tab-h2" aria-controls="sim-humanoid-h2-gallery" aria-selected="false" tabindex="-1">Unitree H2<span>30</span></button><button type="button" role="tab" id="tab-t1" aria-controls="sim-humanoid-t1-gallery" aria-selected="false" tabindex="-1">Booster T1<span>20</span></button></div>
+ <a class="sim-wall" href="humanoid/" aria-label="Open the visualization of all 100 humanoid trajectories"><div class="sim-wall-grid" id="sim-humanoid-g1-gallery" role="tabpanel" aria-labelledby="tab-g1"></div><div class="sim-wall-grid" id="sim-humanoid-h2-gallery" role="tabpanel" aria-labelledby="tab-h2" hidden></div><div class="sim-wall-grid" id="sim-humanoid-t1-gallery" role="tabpanel" aria-labelledby="tab-t1" hidden></div><span class="sim-wall-overlay" aria-hidden="true"><span>Open visualization →</span></span></a>
+ <a class="sim-wall-link" href="humanoid/">Browse all 100 trajectories →</a>
 </section>
 </main>
 <footer class="page-width"><a href="#top">Back to top ↑</a><a href="https://github.com/ComputationalRobotics/GRASP">Computational Robotics ↗</a></footer>

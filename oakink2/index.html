@@ -5,9 +5,9 @@
 <meta name="description" content="All 1,265 successful GRASP trajectories on OakInk2 bimanual tasks, replayed in simulation with two Sharpa hands.">
 <meta name="theme-color" content="#ffffff">
 <title>GRASP · OakInk2 Visualizer</title>
-<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="viewer.css?v=1"><script defer src="viewer.js?v=2"></script>
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/visualizer.css?v=1"><script defer src="../assets/visualizer.js?v=1"></script>
 </head>
-<body>
+<body data-clips="clips.json?v=2">
 <header class="topbar">
  <a class="back" href="../#sim-dex">← GRASP</a>
  <div class="title-block"><h1>OakInk2 Visualizer</h1><p>1,265 successful bimanual trajectories, replayed in simulation</p></div>
@@ -17,7 +17,7 @@
 <main class="layout">
  <aside class="sidebar">
   <label class="search"><span>Search</span><input id="search" type="search" placeholder="Task name or ID" autocomplete="off"></label>
-  <section class="filter-group"><h2>Motion types</h2><ul class="filter-list" id="motions"></ul></section>
+  <div class="facets" id="facets"></div>
   <section class="filter-group"><h2>Order</h2>
    <div class="order"><select id="sort" aria-label="Order clips"><option value="shuffle">Shuffled</option><option value="id">Task ID</option><option value="error">Lowest position error</option></select><button type="button" id="shuffle">↻ Shuffle</button></div>
   </section>

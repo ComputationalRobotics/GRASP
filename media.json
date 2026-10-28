@@ -262,5 +262,437 @@
     "src": "media/oakink2/videos/oakbi_1233_open_gate.mp4",
     "poster": "media/oakink2/posters/oakbi_1233_open_gate.jpg",
     "speed": 1.0
+  },
+  {
+    "id": "g1_object_floorlamp_sub14_floorlamp_004",
+    "title": "Floor lamp",
+    "group": "sim-humanoid",
+    "robot": "g1",
+    "src": "media/humanoid/videos/g1_object_floorlamp_sub14_floorlamp_004.mp4",
+    "poster": "media/humanoid/posters/g1_object_floorlamp_sub14_floorlamp_004.jpg",
+    "speed": 1
+  },
+  {
+    "id": "g1_object_largebox_sub12_largebox_080",
+    "title": "Large box",
+    "group": "sim-humanoid",
+    "robot": "g1",
+    "src": "media/humanoid/videos/g1_object_largebox_sub12_largebox_080.mp4",
+    "poster": "media/humanoid/posters/g1_object_largebox_sub12_largebox_080.jpg",
+    "speed": 1
+  },
+  {
+    "id": "g1_object_largebox_sub16_largebox_029",
+    "title": "Large box",
+    "group": "sim-humanoid",
+    "robot": "g1",
+    "src": "media/humanoid/videos/g1_object_largebox_sub16_largebox_029.mp4",
+    "poster": "media/humanoid/posters/g1_object_largebox_sub16_largebox_029.jpg",
+    "speed": 1
+  },
+  {
+    "id": "g1_object_largetable_sub16_largetable_015",
+    "title": "Large table",
+    "group": "sim-humanoid",
+    "robot": "g1",
+    "src": "media/humanoid/videos/g1_object_largetable_sub16_largetable_015.mp4",
+    "poster": "media/humanoid/posters/g1_object_largetable_sub16_largetable_015.jpg",
+    "speed": 1
+  },
+  {
+    "id": "g1_object_largetable_sub6_largetable_015",
+    "title": "Large table",
+    "group": "sim-humanoid",
+    "robot": "g1",
+    "src": "media/humanoid/videos/g1_object_largetable_sub6_largetable_015.mp4",
+    "poster": "media/humanoid/posters/g1_object_largetable_sub6_largetable_015.jpg",
+    "speed": 1
+  },
+  {
+    "id": "g1_object_monitor_sub2_monitor_003",
+    "title": "Monitor",
+    "group": "sim-humanoid",
+    "robot": "g1",
+    "src": "media/humanoid/videos/g1_object_monitor_sub2_monitor_003.mp4",
+    "poster": "media/humanoid/posters/g1_object_monitor_sub2_monitor_003.jpg",
+    "speed": 1
+  },
+  {
+    "id": "g1_object_plasticbox_sub12_plasticbox_023",
+    "title": "Plastic box",
+    "group": "sim-humanoid",
+    "robot": "g1",
+    "src": "media/humanoid/videos/g1_object_plasticbox_sub12_plasticbox_023.mp4",
+    "poster": "media/humanoid/posters/g1_object_plasticbox_sub12_plasticbox_023.jpg",
+    "speed": 1
+  },
+  {
+    "id": "g1_object_smallbox_sub7_smallbox_051",
+    "title": "Small box",
+    "group": "sim-humanoid",
+    "robot": "g1",
+    "src": "media/humanoid/videos/g1_object_smallbox_sub7_smallbox_051.mp4",
+    "poster": "media/humanoid/posters/g1_object_smallbox_sub7_smallbox_051.jpg",
+    "speed": 1
+  },
+  {
+    "id": "g1_object_smalltable_sub9_smalltable_032",
+    "title": "Small table",
+    "group": "sim-humanoid",
+    "robot": "g1",
+    "src": "media/humanoid/videos/g1_object_smalltable_sub9_smalltable_032.mp4",
+    "poster": "media/humanoid/posters/g1_object_smalltable_sub9_smalltable_032.jpg",
+    "speed": 1
+  },
+  {
+    "id": "g1_object_suitcase_sub17_suitcase_006",
+    "title": "Suitcase",
+    "group": "sim-humanoid",
+    "robot": "g1",
+    "src": "media/humanoid/videos/g1_object_suitcase_sub17_suitcase_006.mp4",
+    "poster": "media/humanoid/posters/g1_object_suitcase_sub17_suitcase_006.jpg",
+    "speed": 1
+  },
+  {
+    "id": "g1_object_suitcase_sub8_suitcase_017",
+    "title": "Suitcase",
+    "group": "sim-humanoid",
+    "robot": "g1",
+    "src": "media/humanoid/videos/g1_object_suitcase_sub8_suitcase_017.mp4",
+    "poster": "media/humanoid/posters/g1_object_suitcase_sub8_suitcase_017.jpg",
+    "speed": 1
+  },
+  {
+    "id": "g1_object_trashcan_sub6_trashcan_007",
+    "title": "Trash can",
+    "group": "sim-humanoid",
+    "robot": "g1",
+    "src": "media/humanoid/videos/g1_object_trashcan_sub6_trashcan_007.mp4",
+    "poster": "media/humanoid/posters/g1_object_trashcan_sub6_trashcan_007.jpg",
+    "speed": 1
+  },
+  {
+    "id": "g1_object_whitechair_sub4_whitechair_009",
+    "title": "White chair",
+    "group": "sim-humanoid",
+    "robot": "g1",
+    "src": "media/humanoid/videos/g1_object_whitechair_sub4_whitechair_009.mp4",
+    "poster": "media/humanoid/posters/g1_object_whitechair_sub4_whitechair_009.jpg",
+    "speed": 1
+  },
+  {
+    "id": "g1_object_whitechair_sub6_whitechair_017",
+    "title": "White chair",
+    "group": "sim-humanoid",
+    "robot": "g1",
+    "src": "media/humanoid/videos/g1_object_whitechair_sub6_whitechair_017.mp4",
+    "poster": "media/humanoid/posters/g1_object_whitechair_sub6_whitechair_017.jpg",
+    "speed": 1
+  },
+  {
+    "id": "g1_object_woodchair_sub14_woodchair_020",
+    "title": "Wood chair",
+    "group": "sim-humanoid",
+    "robot": "g1",
+    "src": "media/humanoid/videos/g1_object_woodchair_sub14_woodchair_020.mp4",
+    "poster": "media/humanoid/posters/g1_object_woodchair_sub14_woodchair_020.jpg",
+    "speed": 1
+  },
+  {
+    "id": "g1_object_woodchair_sub6_woodchair_015",
+    "title": "Wood chair",
+    "group": "sim-humanoid",
+    "robot": "g1",
+    "src": "media/humanoid/videos/g1_object_woodchair_sub6_woodchair_015.mp4",
+    "poster": "media/humanoid/posters/g1_object_woodchair_sub6_woodchair_015.jpg",
+    "speed": 1
+  },
+  {
+    "id": "h2_object_clothesstand_sub1_clothesstand_068",
+    "title": "Clothes stand",
+    "group": "sim-humanoid",
+    "robot": "h2",
+    "src": "media/humanoid/videos/h2_object_clothesstand_sub1_clothesstand_068.mp4",
+    "poster": "media/humanoid/posters/h2_object_clothesstand_sub1_clothesstand_068.jpg",
+    "speed": 1
+  },
+  {
+    "id": "h2_object_largebox_sub16_largebox_029",
+    "title": "Large box",
+    "group": "sim-humanoid",
+    "robot": "h2",
+    "src": "media/humanoid/videos/h2_object_largebox_sub16_largebox_029.mp4",
+    "poster": "media/humanoid/posters/h2_object_largebox_sub16_largebox_029.jpg",
+    "speed": 1
+  },
+  {
+    "id": "h2_object_largebox_sub8_largebox_025",
+    "title": "Large box",
+    "group": "sim-humanoid",
+    "robot": "h2",
+    "src": "media/humanoid/videos/h2_object_largebox_sub8_largebox_025.mp4",
+    "poster": "media/humanoid/posters/h2_object_largebox_sub8_largebox_025.jpg",
+    "speed": 1
+  },
+  {
+    "id": "h2_object_largetable_sub1_largetable_021",
+    "title": "Large table",
+    "group": "sim-humanoid",
+    "robot": "h2",
+    "src": "media/humanoid/videos/h2_object_largetable_sub1_largetable_021.mp4",
+    "poster": "media/humanoid/posters/h2_object_largetable_sub1_largetable_021.jpg",
+    "speed": 1
+  },
+  {
+    "id": "h2_object_largetable_sub6_largetable_017",
+    "title": "Large table",
+    "group": "sim-humanoid",
+    "robot": "h2",
+    "src": "media/humanoid/videos/h2_object_largetable_sub6_largetable_017.mp4",
+    "poster": "media/humanoid/posters/h2_object_largetable_sub6_largetable_017.jpg",
+    "speed": 1
+  },
+  {
+    "id": "h2_object_monitor_sub3_monitor_021",
+    "title": "Monitor",
+    "group": "sim-humanoid",
+    "robot": "h2",
+    "src": "media/humanoid/videos/h2_object_monitor_sub3_monitor_021.mp4",
+    "poster": "media/humanoid/posters/h2_object_monitor_sub3_monitor_021.jpg",
+    "speed": 1
+  },
+  {
+    "id": "h2_object_plasticbox_sub5_plasticbox_045",
+    "title": "Plastic box",
+    "group": "sim-humanoid",
+    "robot": "h2",
+    "src": "media/humanoid/videos/h2_object_plasticbox_sub5_plasticbox_045.mp4",
+    "poster": "media/humanoid/posters/h2_object_plasticbox_sub5_plasticbox_045.jpg",
+    "speed": 1
+  },
+  {
+    "id": "h2_object_smallbox_sub4_smallbox_046",
+    "title": "Small box",
+    "group": "sim-humanoid",
+    "robot": "h2",
+    "src": "media/humanoid/videos/h2_object_smallbox_sub4_smallbox_046.mp4",
+    "poster": "media/humanoid/posters/h2_object_smallbox_sub4_smallbox_046.jpg",
+    "speed": 1
+  },
+  {
+    "id": "h2_object_smallbox_sub7_smallbox_046",
+    "title": "Small box",
+    "group": "sim-humanoid",
+    "robot": "h2",
+    "src": "media/humanoid/videos/h2_object_smallbox_sub7_smallbox_046.mp4",
+    "poster": "media/humanoid/posters/h2_object_smallbox_sub7_smallbox_046.jpg",
+    "speed": 1
+  },
+  {
+    "id": "h2_object_smalltable_sub9_smalltable_032",
+    "title": "Small table",
+    "group": "sim-humanoid",
+    "robot": "h2",
+    "src": "media/humanoid/videos/h2_object_smalltable_sub9_smalltable_032.mp4",
+    "poster": "media/humanoid/posters/h2_object_smalltable_sub9_smalltable_032.jpg",
+    "speed": 1
+  },
+  {
+    "id": "h2_object_smalltable_sub9_smalltable_038",
+    "title": "Small table",
+    "group": "sim-humanoid",
+    "robot": "h2",
+    "src": "media/humanoid/videos/h2_object_smalltable_sub9_smalltable_038.mp4",
+    "poster": "media/humanoid/posters/h2_object_smalltable_sub9_smalltable_038.jpg",
+    "speed": 1
+  },
+  {
+    "id": "h2_object_suitcase_sub17_suitcase_006",
+    "title": "Suitcase",
+    "group": "sim-humanoid",
+    "robot": "h2",
+    "src": "media/humanoid/videos/h2_object_suitcase_sub17_suitcase_006.mp4",
+    "poster": "media/humanoid/posters/h2_object_suitcase_sub17_suitcase_006.jpg",
+    "speed": 1
+  },
+  {
+    "id": "h2_object_suitcase_sub5_suitcase_014",
+    "title": "Suitcase",
+    "group": "sim-humanoid",
+    "robot": "h2",
+    "src": "media/humanoid/videos/h2_object_suitcase_sub5_suitcase_014.mp4",
+    "poster": "media/humanoid/posters/h2_object_suitcase_sub5_suitcase_014.jpg",
+    "speed": 1
+  },
+  {
+    "id": "h2_object_trashcan_sub6_trashcan_010",
+    "title": "Trash can",
+    "group": "sim-humanoid",
+    "robot": "h2",
+    "src": "media/humanoid/videos/h2_object_trashcan_sub6_trashcan_010.mp4",
+    "poster": "media/humanoid/posters/h2_object_trashcan_sub6_trashcan_010.jpg",
+    "speed": 1
+  },
+  {
+    "id": "h2_object_woodchair_sub6_woodchair_014",
+    "title": "Wood chair",
+    "group": "sim-humanoid",
+    "robot": "h2",
+    "src": "media/humanoid/videos/h2_object_woodchair_sub6_woodchair_014.mp4",
+    "poster": "media/humanoid/posters/h2_object_woodchair_sub6_woodchair_014.jpg",
+    "speed": 1
+  },
+  {
+    "id": "h2_object_woodchair_sub14_woodchair_019",
+    "title": "Wood chair",
+    "group": "sim-humanoid",
+    "robot": "h2",
+    "src": "media/humanoid/videos/h2_object_woodchair_sub14_woodchair_019.mp4",
+    "poster": "media/humanoid/posters/h2_object_woodchair_sub14_woodchair_019.jpg",
+    "speed": 1
+  },
+  {
+    "id": "t1_lafan_lafan_dance2_subject4",
+    "title": "Dance",
+    "group": "sim-humanoid",
+    "robot": "t1",
+    "src": "media/humanoid/videos/t1_lafan_lafan_dance2_subject4.mp4",
+    "poster": "media/humanoid/posters/t1_lafan_lafan_dance2_subject4.jpg",
+    "speed": 1
+  },
+  {
+    "id": "t1_object_whitechair_sub10_whitechair_025",
+    "title": "White chair",
+    "group": "sim-humanoid",
+    "robot": "t1",
+    "src": "media/humanoid/videos/t1_object_whitechair_sub10_whitechair_025.mp4",
+    "poster": "media/humanoid/posters/t1_object_whitechair_sub10_whitechair_025.jpg",
+    "speed": 1
+  },
+  {
+    "id": "t1_object_floorlamp_sub17_floorlamp_013",
+    "title": "Floor lamp",
+    "group": "sim-humanoid",
+    "robot": "t1",
+    "src": "media/humanoid/videos/t1_object_floorlamp_sub17_floorlamp_013.mp4",
+    "poster": "media/humanoid/posters/t1_object_floorlamp_sub17_floorlamp_013.jpg",
+    "speed": 1
+  },
+  {
+    "id": "t1_object_suitcase_sub1_suitcase_089",
+    "title": "Suitcase",
+    "group": "sim-humanoid",
+    "robot": "t1",
+    "src": "media/humanoid/videos/t1_object_suitcase_sub1_suitcase_089.mp4",
+    "poster": "media/humanoid/posters/t1_object_suitcase_sub1_suitcase_089.jpg",
+    "speed": 1
+  },
+  {
+    "id": "t1_lafan_lafan_jumps1_subject2",
+    "title": "Jumps",
+    "group": "sim-humanoid",
+    "robot": "t1",
+    "src": "media/humanoid/videos/t1_lafan_lafan_jumps1_subject2.mp4",
+    "poster": "media/humanoid/posters/t1_lafan_lafan_jumps1_subject2.jpg",
+    "speed": 1
+  },
+  {
+    "id": "t1_object_largetable_sub5_largetable_005",
+    "title": "Large table",
+    "group": "sim-humanoid",
+    "robot": "t1",
+    "src": "media/humanoid/videos/t1_object_largetable_sub5_largetable_005.mp4",
+    "poster": "media/humanoid/posters/t1_object_largetable_sub5_largetable_005.jpg",
+    "speed": 1
+  },
+  {
+    "id": "t1_object_largetable_sub6_largetable_000",
+    "title": "Large table",
+    "group": "sim-humanoid",
+    "robot": "t1",
+    "src": "media/humanoid/videos/t1_object_largetable_sub6_largetable_000.mp4",
+    "poster": "media/humanoid/posters/t1_object_largetable_sub6_largetable_000.jpg",
+    "speed": 1
+  },
+  {
+    "id": "t1_object_largetable_sub6_largetable_034",
+    "title": "Large table",
+    "group": "sim-humanoid",
+    "robot": "t1",
+    "src": "media/humanoid/videos/t1_object_largetable_sub6_largetable_034.mp4",
+    "poster": "media/humanoid/posters/t1_object_largetable_sub6_largetable_034.jpg",
+    "speed": 1
+  },
+  {
+    "id": "t1_lafan_lafan_sprint1_subject4",
+    "title": "Sprint",
+    "group": "sim-humanoid",
+    "robot": "t1",
+    "src": "media/humanoid/videos/t1_lafan_lafan_sprint1_subject4.mp4",
+    "poster": "media/humanoid/posters/t1_lafan_lafan_sprint1_subject4.jpg",
+    "speed": 1
+  },
+  {
+    "id": "t1_object_smalltable_sub14_smalltable_004",
+    "title": "Small table",
+    "group": "sim-humanoid",
+    "robot": "t1",
+    "src": "media/humanoid/videos/t1_object_smalltable_sub14_smalltable_004.mp4",
+    "poster": "media/humanoid/posters/t1_object_smalltable_sub14_smalltable_004.jpg",
+    "speed": 1
+  },
+  {
+    "id": "t1_object_smalltable_sub6_smalltable_046",
+    "title": "Small table",
+    "group": "sim-humanoid",
+    "robot": "t1",
+    "src": "media/humanoid/videos/t1_object_smalltable_sub6_smalltable_046.mp4",
+    "poster": "media/humanoid/posters/t1_object_smalltable_sub6_smalltable_046.jpg",
+    "speed": 1
+  },
+  {
+    "id": "t1_object_suitcase_sub8_suitcase_050",
+    "title": "Suitcase",
+    "group": "sim-humanoid",
+    "robot": "t1",
+    "src": "media/humanoid/videos/t1_object_suitcase_sub8_suitcase_050.mp4",
+    "poster": "media/humanoid/posters/t1_object_suitcase_sub8_suitcase_050.jpg",
+    "speed": 1
+  },
+  {
+    "id": "t1_lafan_lafan_fightAndSports1_subject1",
+    "title": "Fight and sports",
+    "group": "sim-humanoid",
+    "robot": "t1",
+    "src": "media/humanoid/videos/t1_lafan_lafan_fightAndSports1_subject1.mp4",
+    "poster": "media/humanoid/posters/t1_lafan_lafan_fightAndSports1_subject1.jpg",
+    "speed": 1
+  },
+  {
+    "id": "t1_object_trashcan_sub8_trashcan_034",
+    "title": "Trash can",
+    "group": "sim-humanoid",
+    "robot": "t1",
+    "src": "media/humanoid/videos/t1_object_trashcan_sub8_trashcan_034.mp4",
+    "poster": "media/humanoid/posters/t1_object_trashcan_sub8_trashcan_034.jpg",
+    "speed": 1
+  },
+  {
+    "id": "t1_object_floorlamp_sub9_floorlamp_025",
+    "title": "Floor lamp",
+    "group": "sim-humanoid",
+    "robot": "t1",
+    "src": "media/humanoid/videos/t1_object_floorlamp_sub9_floorlamp_025.mp4",
+    "poster": "media/humanoid/posters/t1_object_floorlamp_sub9_floorlamp_025.jpg",
+    "speed": 1
+  },
+  {
+    "id": "t1_object_largetable_sub5_largetable_004",
+    "title": "Large table",
+    "group": "sim-humanoid",
+    "robot": "t1",
+    "src": "media/humanoid/videos/t1_object_largetable_sub5_largetable_004.mp4",
+    "poster": "media/humanoid/posters/t1_object_largetable_sub5_largetable_004.jpg",
+    "speed": 1
   }
 ]

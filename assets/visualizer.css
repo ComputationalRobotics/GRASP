@@ -28,6 +28,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 .sidebar{position:sticky;top:96px;align-self:start;display:grid;grid-template-columns:minmax(0,1fr);gap:14px;max-height:calc(100vh - 110px);overflow:hidden auto;padding-bottom:4px}
 .search{display:grid;gap:6px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .search input{width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;font-size:14px;letter-spacing:0;text-transform:none}
+.facets{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
 .filter-group{padding:14px 14px 10px;background:var(--soft);border:1px solid var(--line);border-radius:10px}
 .filter-group h2{margin-bottom:8px;padding-left:9px;border-left:3px solid var(--crimson);font-size:14px;font-weight:700;line-height:1.2}
 .filter-list{list-style:none;margin:0;padding:0}

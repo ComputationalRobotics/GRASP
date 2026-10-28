@@ -30,14 +30,17 @@ clips = json.loads((renders / 'manifest.json').read_text())
 with ThreadPoolExecutor(32) as pool:
     list(pool.map(encode, clips))
 
+# Manifest read by assets/visualizer.js: media folder, filter facets, and display-ready text per clip.
 gallery = []
 for clip in clips:
     title = re.sub(r'^(oakbi_\d+_|oakextra_[0-9a-f]{5}_\d+_)', '', clip['id']).replace('_', ' ').replace('usb', 'USB')
-    metrics = clip['metrics']
-    gallery.append({'id': clip['id'], 'title': title[:1].upper() + title[1:], 'motion': title.split()[0].lower(),
-                    'speed': clip['speed'], 'seconds': clip['video_s'],
-                    'error_cm': round(metrics['obj_pos_err'] * 100, 2), 'error_rad': round(metrics['obj_quat_err'], 3)})
+    title = title[:1].upper() + title[1:]
+    cm, rad = clip['metrics']['obj_pos_err'] * 100, clip['metrics']['obj_quat_err']
+    gallery.append({'id': clip['id'], 'title': title, 'facets': {'motion': title.split()[0]},
+                    'speed': clip['speed'], 'seconds': clip['video_s'], 'error': round(cm, 2),
+                    'stat': f'{cm:.1f} cm · {rad:.2f} rad', 'detail': f'object error {cm:.1f} cm · {rad:.2f} rad'})
+manifest = {'media': '../media/oakink2/', 'facets': [{'key': 'motion', 'title': 'Motion types', 'top': 14}], 'clips': gallery}
 (root / 'oakink2').mkdir(exist_ok=True)
-(root / 'oakink2' / 'clips.json').write_text(json.dumps(gallery, separators=(',', ':')))
+(root / 'oakink2' / 'clips.json').write_text(json.dumps(manifest, ensure_ascii=False, separators=(',', ':')))
 size = sum(f.stat().st_size for f in videos.iterdir()) / 1e6
 print(f'{len(gallery)} clips, {size:.1f} MB of video', flush=True)
