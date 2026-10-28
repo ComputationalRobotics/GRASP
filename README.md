@@ -38,7 +38,7 @@ Offscreen videos are paused; gallery clips are loaded near the viewport. The glo
 - `index.html`: title, authors, four hero backgrounds, and four demo sections.
 - `styles.css`: responsive layout and dark-to-light transition.
 - `app.js`: scroll stages, media loading, video controls.
-- `media.json`: demo manifest, including the 16 featured simulation clips.
+- `media.json`: demo manifest, including the 16 featured simulation clips. GitHub Pages caches files for 10 minutes, so after editing it bump the `media.json?v=` fetch in `app.js` (and `oakink2/clips.json?v=` in `oakink2/viewer.js` after a rebuild), then bump the script's `?v=` in the HTML that loads it.
 - `media/`: web video and poster derivatives; `media/oakink2/` holds every OakInk2 simulation clip.
 - `oakink2/`: the OakInk2 visualizer (`index.html`, `viewer.css`, `viewer.js`, `clips.json`).
 

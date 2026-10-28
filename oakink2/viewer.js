@@ -110,7 +110,8 @@ $('shuffle').addEventListener('click',()=>{shuffle();sort.value='shuffle';update
 more.addEventListener('click',renderPage);
 document.addEventListener('visibilitychange',()=>{if(document.hidden)document.querySelectorAll('video').forEach(v=>v.pause());});
 
-fetch('clips.json').then(response=>{if(!response.ok)throw new Error('Could not load clips');return response.json();}).then(data=>{
+// Versioned like media.json on the main page: bump it whenever clips.json is rebuilt.
+fetch('clips.json?v=1').then(response=>{if(!response.ok)throw new Error('Could not load clips');return response.json();}).then(data=>{
   clips=data;shuffle();
   const counts={};clips.forEach(clip=>{counts[clip.motion]=(counts[clip.motion]||0)+1;});
   topMotions=Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,TOP_MOTIONS).map(([motion])=>motion);
