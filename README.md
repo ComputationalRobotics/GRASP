@@ -52,4 +52,4 @@ Harvard crimson: `#A51C30`, per the [Harvard SEAS palette](https://seas.harvard.
 
 Institutional logo sources (the Harvard shield is extracted from the official SVG without changing its paths; the wordmark is omitted):
 - Harvard University: https://www.harvard.edu/wp-content/themes/core/assets/img/theme/branding-assets/footer-logo.svg
-- Computational Robotics Group: user-supplied Halloween variant, stored unchanged as `assets/computational-robotics-halloween.png`; transparent margins are cropped only in CSS.
+- Computational Robotics Group: transparent Halloween variant with warm gold lettering in `assets/computational-robotics-halloween-gold.png`, edited with imagegen from the supplied artwork. The original remains unchanged as `assets/computational-robotics-halloween.png`. Transparent margins are cropped in CSS; no white backing panel is used.
