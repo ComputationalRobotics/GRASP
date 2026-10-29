@@ -1,6 +1,6 @@
 # GRASP project website
 
-Project page for **GRASP: Recovering Gradients for Contact-Rich Trajectory Optimization**.
+Project page for **GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting**.
 
 Authors: Yang Liu*, Tong Wang*, Yiming Bao, Heng Yang.
 
@@ -52,4 +52,4 @@ Harvard crimson: `#A51C30`, per the [Harvard SEAS palette](https://seas.harvard.
 
 Institutional logo sources (the Harvard shield is extracted from the official SVG without changing its paths; the wordmark is omitted):
 - Harvard University: https://www.harvard.edu/wp-content/themes/core/assets/img/theme/branding-assets/footer-logo.svg
-- Computational Robotics Group: https://computationalrobotics.seas.harvard.edu/lab_logo-horz-white-01.PNG
+- Computational Robotics Group: user-supplied Halloween variant, stored unchanged as `assets/computational-robotics-halloween.png`; transparent margins are cropped only in CSS.

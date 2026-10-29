@@ -58,3 +58,6 @@
 @media(hover:none){.sim-wall-overlay{opacity:1;background:transparent}.sim-wall-overlay span{transform:none;font-size:11px;padding:9px 17px}}
 @media(max-width:650px){.sim-wall-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sim-tile:nth-child(n+9){display:none}.sim-wall-link{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.sim-wall-overlay,.sim-wall-overlay span{transition:none}}
+
+/* Keep the supplied Halloween artwork intact; crop transparent margins in CSS. */
+.group-logo img{aspect-ratio:2171/276;object-fit:cover;object-position:center}
