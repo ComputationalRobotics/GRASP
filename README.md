@@ -64,6 +64,12 @@ The real humanoid section shows all ten `humanoid_new` clips plus six original d
 ## Quantitative results
 The final `#results` section has independent accessible tabs for OakInk2 dexterous retargeting and G1 humanoid retargeting (LAFAN1, AMASS, OMOMO). Values are transcribed from Overleaf commit `cbb75e9`, `arxiv/generated/main_table.tex` and `humanoid_table.tex`. Baseline provenance and evaluation-scope notes are visible beneath each table; protocol details expand on demand. GRASP rows have a pale crimson background; numerical bolding denotes best reported values per metric (within each humanoid dataset), including ties. HOT3D and cross-embodiment results are not included. Existing demo sections are unchanged.
 
+## Policy learning
+
+The always-visible `#policy-learning` subsection follows both retargeting result panels, inside Results. Dexterous hand and Humanoid each have two empty, labeled 16:9 reference-video slots: **Kinematic reference** and **GRASP**, immediately followed by the corresponding PPO learning curves. The four slots intentionally contain no video source, play control, or release-status text. Their stable IDs are `policy-dex-kinematic`, `policy-dex-grasp`, `policy-humanoid-kinematic`, and `policy-humanoid-grasp`.
+
+The full figures in `assets/results/` are 2,400-pixel-wide renders of `arxiv/figures/single_axis_rl.pdf` and `grasp_omniretarget_rl.pdf` from Overleaf commit `83ccfda`; original data and legends are preserved. The captions map Original IK / After TO to the dexterous reference choices and retain the humanoid red / blue convention. Each plot can scroll horizontally on narrow screens or open at full size. Both studies remain visible when the retargeting result tabs change.
+
 ## Abstract and overview
 The full paper abstract (Overleaf commit `cbb75e9`, `arxiv/main.tex`) follows Results near the end of the page. It is split into three paragraphs for web readability without changing its wording. The `#method` section contains an animated explanation of archived evaluations and gradient-guided proposals. The overview video remains a placeholder.
 

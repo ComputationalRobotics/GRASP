@@ -142,3 +142,28 @@
 @media(max-width:850px){.site-header{height:96px;flex-wrap:wrap;align-content:center;gap:12px;padding-block:12px}.site-header nav{width:100%;justify-content:space-between;gap:10px;font-size:11px}.site-header nav a{padding:0 0 5px}.hero-category{top:115px;bottom:auto}html{scroll-padding-top:115px}}
 @media(max-width:650px){.site-header nav{gap:7px;font-size:10px}.content-section{padding-top:50px;padding-bottom:50px}.overview-video-slot{margin-top:26px;font-size:12px}.method-figure-slot{height:190px;margin-top:26px;font-size:12px}.method-explanation{font-size:13px;line-height:1.85}.citation-code{padding:18px;font-size:10px}.copy-citation{font-size:10px;padding:9px 13px}.citation-heading{gap:15px}}
 @media(max-width:360px){.site-header nav{font-size:9px;gap:5px}}
+
+/* Policy learning: paired reference videos, followed immediately by each study's curves. */
+.policy-learning{margin-top:64px;padding-top:38px;border-top:1px solid var(--line);scroll-margin-top:115px}
+.policy-learning>h3{margin:0;font:600 28px/1.3 var(--display);letter-spacing:-.035em}
+.policy-study{margin-top:32px;scroll-margin-top:115px}
+.policy-study+.policy-study{margin-top:52px;padding-top:34px;border-top:1px solid var(--line)}
+.policy-study>h4{margin:0 0 20px;font:600 19px/1.4 var(--display);letter-spacing:-.025em}
+.policy-video-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.policy-video{min-width:0}
+.policy-video figcaption{font-size:12px;font-weight:600;color:#62575b;margin-bottom:10px}
+.policy-video-grasp figcaption{color:var(--crimson)}
+.policy-video-slot{aspect-ratio:16/9;background:#f6f3f4;border:1px dashed #d8ccd0;border-radius:4px;overflow:hidden}
+.policy-video-slot video{object-fit:contain}
+.policy-curves{margin-top:24px}
+.policy-curve-scroll{overflow-x:auto;padding:20px 12px 12px;border:1px solid var(--line);border-radius:5px;background:#fff;scrollbar-color:#c8a4af #f6f3f4}
+.policy-curve-scroll:focus-visible{outline:3px solid var(--crimson);outline-offset:4px}
+.policy-curve-scroll img{display:block;width:100%;height:auto;max-width:none}
+.policy-dex-curves img{min-width:820px}
+.policy-humanoid-curves img{min-width:620px}
+.policy-curves>figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:26px;margin-top:13px;font-size:11px;line-height:1.8;color:#75676b}
+.policy-curves>figcaption p{max-width:940px}
+.policy-curves>figcaption strong{font-weight:600;color:#51424a}
+.policy-curves>figcaption a{color:var(--crimson);font-weight:600;white-space:nowrap;flex-shrink:0}
+.policy-curves>figcaption a:hover{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:650px){.policy-learning{margin-top:42px;padding-top:28px}.policy-learning>h3{font-size:24px}.policy-study{margin-top:26px}.policy-study>h4{font-size:17px;margin-bottom:16px}.policy-study+.policy-study{margin-top:36px;padding-top:26px}.policy-video-pair{gap:12px}.policy-video figcaption{font-size:10px;margin-bottom:8px}.policy-curves{margin-top:18px}.policy-curve-scroll{padding:14px 8px 8px}.policy-curves>figcaption{display:block;font-size:10px;margin-top:12px}.policy-curves>figcaption a{display:inline-block;margin-top:8px}}
