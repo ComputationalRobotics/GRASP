@@ -5,7 +5,7 @@
 <meta name="description" content="GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting. Real-world dexterous-hand and humanoid demonstrations.">
 <meta name="theme-color" content="#080808"><meta property="og:title" content="GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting"><meta property="og:type" content="website">
 <title>GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting</title>
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=15"><script defer src="app.js?v=10"></script>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=16"><script defer src="app.js?v=10"></script><link rel="stylesheet" href="assets/method-insight.css?v=1"><script defer src="assets/method-insight.js?v=1"></script>
 </head>
 <body>
 <a class="skip-link" href="#tasks">Skip to demonstrations</a>
@@ -59,10 +59,76 @@
 </section>
 </section>
 <section class="method-section content-section page-width" id="method" data-nav-section aria-labelledby="method-heading">
- <div class="section-intro"><p class="section-index">Method</p><h2 id="method-heading">Every rollout informs<br>the next motion.</h2></div>
- <!-- Replace this placeholder with the final method figure. -->
- <div class="method-figure-slot" role="img" aria-label="Method figure placeholder"><span>Method overview</span></div>
- <p class="method-explanation">GRASP reuses evaluated trajectory–cost pairs, including rejected proposals, to fit local quadratic models whose gradients guide subsequent samples. In a receding-horizon loop, these search directions support contact-rich motion retargeting without differentiating through the simulator.</p>
+ <div class="section-intro method-intro"><div><p class="section-index">Method / The insight</p><h2 id="method-heading">Every rollout<br>serves twice.</h2></div><p class="method-lede">A candidate motion today.<br><span>A search direction tomorrow.</span></p></div>
+ <figure class="method-insight" id="method-insight" aria-labelledby="method-heading" aria-describedby="method-caption">
+  <div class="mi-topline"><span class="mi-kicker">GRASP <span aria-hidden="true">/</span> Gradient recovery from archived samples</span><button class="mi-playback" type="button" hidden aria-pressed="false"><span class="mi-playback-icon" aria-hidden="true">Ⅱ</span><span class="mi-playback-label">Pause animation</span></button></div>
+  <div class="mi-panels">
+   <div class="mi-panel mi-evaluate">
+    <div class="mi-panel-title"><span>01</span><h3>Evaluate</h3></div>
+    <p class="mi-panel-copy">Every simulated candidate leaves<br>a control–cost pair.</p>
+    <svg class="mi-plot" viewBox="0 0 350 300" role="img" aria-label="Candidate controls are simulated and paired with their measured costs, then retained in an archive.">
+     <text class="mi-plot-label" x="30" y="32">CANDIDATE CONTROLS</text><text class="mi-plot-label" x="192" y="32">COST</text>
+     <g class="mi-rollout" style="--delay:0ms"><path d="M30 79 C55 79,57 57,80 64 S112 89,140 68"/><circle class="mi-hollow" cx="152" cy="68" r="4"/><path class="mi-pair-line" d="M164 68H187"/><text x="199" y="73">J<tspan baseline-shift="sub" font-size="10">1</tspan></text></g><g class="mi-rollout" style="--delay:120ms"><path d="M30 106 C55 89,57 84,80 91 S112 99,140 95"/><circle class="mi-solid" cx="152" cy="95" r="4"/><path class="mi-pair-line" d="M164 95H187"/><text x="199" y="100">J<tspan baseline-shift="sub" font-size="10">2</tspan></text></g><g class="mi-rollout" style="--delay:240ms"><path d="M30 133 C55 128,57 111,80 118 S112 138,140 122"/><circle class="mi-solid" cx="152" cy="122" r="4"/><path class="mi-pair-line" d="M164 122H187"/><text x="199" y="127">J<tspan baseline-shift="sub" font-size="10">3</tspan></text></g><g class="mi-rollout" style="--delay:360ms"><path d="M30 160 C55 146,57 138,80 145 S112 156,140 149"/><circle class="mi-hollow" cx="152" cy="149" r="4"/><path class="mi-pair-line" d="M164 149H187"/><text x="199" y="154">J<tspan baseline-shift="sub" font-size="10">4</tspan></text></g><g class="mi-rollout" style="--delay:480ms"><path d="M30 187 C55 191,57 165,80 172 S112 201,140 176"/><circle class="mi-solid" cx="152" cy="176" r="4"/><path class="mi-pair-line" d="M164 176H187"/><text x="199" y="181">J<tspan baseline-shift="sub" font-size="10">5</tspan></text></g><g class="mi-rollout" style="--delay:600ms"><path d="M30 214 C55 203,57 192,80 199 S112 213,140 203"/><circle class="mi-solid" cx="152" cy="203" r="4"/><path class="mi-pair-line" d="M164 203H187"/><text x="199" y="208">J<tspan baseline-shift="sub" font-size="10">6</tspan></text></g>
+     <path class="mi-archive-bracket" d="M235 59H247V222H235M247 140H267"/>
+     <g class="mi-archive-symbol"><rect x="276" y="104" width="41" height="10" rx="2"/><rect x="276" y="121" width="41" height="10" rx="2"/><rect x="276" y="138" width="41" height="10" rx="2"/><rect x="276" y="155" width="41" height="10" rx="2"/><path d="M287 109h18m-18 17h18m-18 17h18m-18 17h18"/></g>
+     <text class="mi-archive-label" x="296" y="190" text-anchor="middle">Archive</text>
+     <path class="mi-sim-rule" d="M30 257H222"/><text class="mi-note" x="30" y="280">Measured by physics rollouts</text>
+    </svg>
+    <div class="mi-panel-foot"><span class="mi-legend-dot" aria-hidden="true"></span>Accepted <span class="mi-legend-dot mi-legend-hollow" aria-hidden="true"></span>Rejected <span class="mi-legend-retain">Both retained</span></div>
+   </div>
+   <div class="mi-panel mi-recover">
+    <div class="mi-panel-title"><span>02</span><h3>Recover</h3></div>
+    <p class="mi-panel-copy">Fit the local cost structure.<br>Recover a direction from the archive.</p>
+    <svg class="mi-plot" viewBox="0 0 350 300" role="img" aria-label="Archived evaluations are projected into local control coordinates. A quadratic surrogate is fitted to recover local gradient guidance.">
+     <defs><clipPath id="mi-fit-clip"><rect x="36" y="48" width="278" height="206"/></clipPath><marker id="mi-red-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#a51c30"/></marker></defs>
+     <text class="mi-plot-label" x="35" y="32">LOCAL QUADRATIC FIT</text>
+     <path class="mi-axis" d="M35 48V255H314"/><path class="mi-grid" d="M35 95H314M35 148H314M35 201H314M91 48V255M147 48V255M203 48V255M259 48V255"/><g clip-path="url(#mi-fit-clip)"><g class="mi-contours mi-fit-reveal" transform="rotate(-31 197 151)"><ellipse cx="197" cy="151" rx="24" ry="14.879999999999999"/><ellipse cx="197" cy="151" rx="49" ry="30.38"/><ellipse cx="197" cy="151" rx="76" ry="47.12"/><ellipse cx="197" cy="151" rx="105" ry="65.1"/><ellipse cx="197" cy="151" rx="136" ry="84.32"/></g></g><g class="mi-archive-points"><circle class="mi-sample mi-hollow" cx="55" cy="158" r="4.5" style="--delay:0ms"/>
+<circle class="mi-sample mi-solid" cx="71" cy="114" r="4.5" style="--delay:45ms"/>
+<circle class="mi-sample mi-solid" cx="79" cy="210" r="4.5" style="--delay:90ms"/>
+<circle class="mi-sample mi-hollow" cx="103" cy="79" r="4.5" style="--delay:135ms"/>
+<circle class="mi-sample mi-solid" cx="105" cy="148" r="4.5" style="--delay:180ms"/>
+<circle class="mi-sample mi-solid" cx="122" cy="188" r="4.5" style="--delay:225ms"/>
+<circle class="mi-sample mi-hollow" cx="132" cy="113" r="4.5" style="--delay:270ms"/>
+<circle class="mi-sample mi-solid" cx="144" cy="234" r="4.5" style="--delay:315ms"/>
+<circle class="mi-sample mi-solid" cx="151" cy="155" r="4.5" style="--delay:360ms"/>
+<circle class="mi-sample mi-hollow" cx="169" cy="64" r="4.5" style="--delay:405ms"/>
+<circle class="mi-sample mi-solid" cx="174" cy="200" r="4.5" style="--delay:450ms"/>
+<circle class="mi-sample mi-solid" cx="187" cy="116" r="4.5" style="--delay:495ms"/>
+<circle class="mi-sample mi-hollow" cx="198" cy="164" r="4.5" style="--delay:540ms"/>
+<circle class="mi-sample mi-solid" cx="213" cy="222" r="4.5" style="--delay:585ms"/>
+<circle class="mi-sample mi-solid" cx="225" cy="82" r="4.5" style="--delay:630ms"/>
+<circle class="mi-sample mi-hollow" cx="230" cy="139" r="4.5" style="--delay:675ms"/>
+<circle class="mi-sample mi-solid" cx="252" cy="184" r="4.5" style="--delay:720ms"/>
+<circle class="mi-sample mi-solid" cx="267" cy="111" r="4.5" style="--delay:765ms"/>
+<circle class="mi-sample mi-hollow" cx="282" cy="229" r="4.5" style="--delay:810ms"/>
+<circle class="mi-sample mi-solid" cx="293" cy="156" r="4.5" style="--delay:855ms"/></g>
+     <g class="mi-fit-direction"><circle cx="105" cy="148" r="8"/><path d="M114 152L169 181" marker-end="url(#mi-red-arrow)"/></g>
+     <text class="mi-note" x="35" y="280">Local control coordinates · schematic</text>
+    </svg>
+    <div class="mi-panel-foot"><span class="mi-state-dot"></span>No differentiation through the simulator</div>
+   </div>
+   <div class="mi-panel mi-guide">
+    <div class="mi-panel-title"><span>03</span><h3>Guide</h3></div>
+    <p class="mi-panel-copy">Use the recovered gradient<br>to guide stochastic proposals.</p>
+    <svg class="mi-plot" viewBox="0 0 350 300" role="img" aria-label="A surrogate gradient guides stochastic proposals. Each proposal is evaluated with the physics simulator and a Metropolis–Hastings acceptance test.">
+     <text class="mi-plot-label" x="35" y="32">GUIDANCE + EXPLORATION</text>
+     <path class="mi-axis" d="M35 48V255H314"/><path class="mi-grid" d="M35 95H314M35 148H314M35 201H314M91 48V255M147 48V255M203 48V255M259 48V255"/><g clip-path="url(#mi-fit-clip)"><g class="mi-contours mi-guide-contours" transform="rotate(-31 197 151)"><ellipse cx="197" cy="151" rx="24" ry="14.879999999999999"/><ellipse cx="197" cy="151" rx="49" ry="30.38"/><ellipse cx="197" cy="151" rx="76" ry="47.12"/><ellipse cx="197" cy="151" rx="105" ry="65.1"/><ellipse cx="197" cy="151" rx="136" ry="84.32"/></g></g>
+     <circle class="mi-current-point" cx="105" cy="148" r="7"/><text class="mi-small-label" x="65" y="173">Current</text>
+     <g class="mi-proposals">
+      <path class="mi-noise-path" d="M105 148Q147 152 183 150M105 148Q148 182 194 202M105 148Q163 181 217 176M105 148Q137 156 163 165M105 148Q151 207 181 230M105 148Q137 130 168 120"/>
+      <circle class="mi-proposal-point" cx="183" cy="150" r="5" style="--delay:140ms"/><circle class="mi-proposal-point" cx="194" cy="202" r="5" style="--delay:260ms"/><circle class="mi-proposal-point" cx="217" cy="176" r="5" style="--delay:380ms"/><circle class="mi-proposal-point" cx="163" cy="165" r="5" style="--delay:500ms"/><circle class="mi-proposal-point" cx="181" cy="230" r="5" style="--delay:620ms"/><circle class="mi-proposal-point" cx="168" cy="120" r="5" style="--delay:740ms"/>
+     </g>
+     <path class="mi-guidance-arrow" d="M115 153L169 181" marker-end="url(#mi-red-arrow)"/>
+     <text class="mi-note" x="35" y="280">The fit guides where to propose</text>
+    </svg>
+    <div class="mi-panel-foot mi-correction"><svg viewBox="0 0 18 18" aria-hidden="true"><path d="M9 1.5 15 4v5c0 3-3 5.5-6 7-3-1.5-6-4-6-7V4Z"/><path d="m6 9 2 2 4-4"/></svg>Physics rollout + MH correction</div>
+   </div>
+  </div>
+  <div class="mi-return"><svg viewBox="0 0 1000 43" preserveAspectRatio="none" aria-hidden="true"><defs><marker id="mi-loop-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#a51c30"/></marker></defs><path class="mi-return-track" d="M850 1V15Q850 30 835 30H165Q150 30 150 15V3" marker-end="url(#mi-loop-arrow)"/><path class="mi-return-pulse" d="M850 1V15Q850 30 835 30H165Q150 30 150 15V3"/></svg><span>New evaluations return to the archive for the next fit</span></div>
+  <div class="mi-controls" hidden role="group" aria-label="Animation steps"><button type="button" data-mi-step="0" aria-pressed="true"><span>01</span> Evaluate</button><button type="button" data-mi-step="1" aria-pressed="false"><span>02</span> Recover</button><button type="button" data-mi-step="2" aria-pressed="false"><span>03</span> Guide</button><button type="button" data-mi-step="3" aria-pressed="false"><span>04</span> Correct &amp; reuse</button></div>
+  <figcaption id="method-caption"><div class="mi-live-caption"><span class="mi-caption-label">The insight</span><p class="mi-caption-text">The same evaluations supply candidate motions and local gradient guidance.</p></div><span class="mi-disclaimer">Conceptual illustration</span></figcaption>
+ </figure>
+ <p class="method-explanation">GRASP fits local quadratic models to archived control–cost pairs, including rejected proposals. Their gradients guide new samples without differentiating through the simulator. Acceptance uses true simulator costs and a Metropolis–Hastings correction; new evaluations inform the next fit.</p>
 </section>
 <section id="sim" data-nav-section aria-label="Simulation">
 <section class="demo-section simulation-section page-width" id="sim-dex">
