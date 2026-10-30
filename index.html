@@ -224,10 +224,9 @@
   <section class="policy-study" id="policy-humanoid" aria-labelledby="policy-humanoid-heading">
    <h4 id="policy-humanoid-heading">Humanoid</h4>
    <div class="policy-video-pair" aria-label="Humanoid reference comparison">
-    <figure class="policy-video"><figcaption>Kinematic reference</figcaption><div class="policy-video-slot" id="policy-humanoid-kinematic" role="img" aria-label="Reserved video: humanoid kinematic reference"></div></figure>
-    <figure class="policy-video policy-video-grasp"><figcaption>GRASP</figcaption><div class="policy-video-slot" id="policy-humanoid-grasp" role="img" aria-label="Reserved video: GRASP-refined humanoid reference"></div></figure>
+    <figure class="policy-video"><figcaption>Kinematic reference</figcaption><div class="policy-video-slot is-filled" id="policy-humanoid-kinematic"><video muted loop playsinline preload="none" poster="media/policy/g1-box-kinematic.jpg" data-src="media/policy/g1-box-kinematic.mp4" aria-label="Kinematic reference for a Unitree G1 lifting and carrying a large box"></video></div></figure>
+    <figure class="policy-video policy-video-grasp"><figcaption>GRASP</figcaption><div class="policy-video-slot is-filled" id="policy-humanoid-grasp"><video muted loop playsinline preload="none" poster="media/policy/g1-box-grasp.jpg" data-src="media/policy/g1-box-grasp.mp4" aria-label="GRASP-refined reference for the same Unitree G1 box carry"></video></div></figure>
    </div>
-   <!-- Replace the two empty slots above with the paired reference videos. -->
    <figure class="policy-curves">
     <div class="policy-curve-scroll policy-humanoid-curves" tabindex="0" role="region" aria-label="Humanoid RL learning curves; scroll horizontally on narrow screens"><img src="assets/results/humanoid-policy-learning.png" width="2400" height="1049" loading="lazy" decoding="async" alt="Humanoid PPO object position and orientation tracking rewards, comparing red kinematic OmniRetarget references with blue GRASP-refined references."></div>
     <figcaption><p>Humanoid PPO tracking with three reference motions from OmniRetarget. Red denotes original kinematic references; blue denotes GRASP-refined references. Higher rewards indicate better tracking.</p><a href="assets/results/humanoid-policy-learning.png" target="_blank" rel="noopener" aria-label="View the humanoid RL figure at full size">View full figure ↗</a></figcaption>
