@@ -5,7 +5,7 @@
 <meta name="description" content="GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting. Real-world dexterous-hand and humanoid demonstrations.">
 <meta name="theme-color" content="#080808"><meta property="og:title" content="GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting"><meta property="og:type" content="website">
 <title>GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting</title>
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=11"><script defer src="app.js?v=7"></script>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=12"><script defer src="app.js?v=8"></script>
 </head>
 <body>
 <a class="skip-link" href="#real-dex">Skip to demonstrations</a>
@@ -64,6 +64,56 @@
  <div class="robot-tabs" role="tablist" aria-label="Humanoid robot"><button type="button" role="tab" id="tab-g1" aria-controls="sim-humanoid-g1-gallery" aria-selected="true">Unitree G1<span>50</span></button><button type="button" role="tab" id="tab-h2" aria-controls="sim-humanoid-h2-gallery" aria-selected="false" tabindex="-1">Unitree H2<span>30</span></button><button type="button" role="tab" id="tab-t1" aria-controls="sim-humanoid-t1-gallery" aria-selected="false" tabindex="-1">Booster T1<span>20</span></button></div>
  <a class="sim-wall" href="humanoid/" aria-label="Open the visualization of all 100 humanoid trajectories"><div class="sim-wall-grid" id="sim-humanoid-g1-gallery" role="tabpanel" aria-labelledby="tab-g1"></div><div class="sim-wall-grid" id="sim-humanoid-h2-gallery" role="tabpanel" aria-labelledby="tab-h2" hidden></div><div class="sim-wall-grid" id="sim-humanoid-t1-gallery" role="tabpanel" aria-labelledby="tab-t1" hidden></div><span class="sim-wall-overlay" aria-hidden="true"><span>Open visualization →</span></span></a>
  <a class="sim-wall-link" href="humanoid/">Browse all 100 trajectories →</a>
+</section>
+<section class="results-section page-width" id="results" aria-labelledby="results-heading">
+ <div class="section-intro"><p class="section-index">05 / Experiments</p><h2 id="results-heading">Quantitative results.</h2></div>
+ <div class="results-tabs" role="tablist" aria-label="Experiment results">
+  <button type="button" role="tab" id="results-tab-dex" aria-controls="results-dex" aria-selected="true">Dexterous retargeting<span>OakInk2</span></button>
+  <button type="button" role="tab" id="results-tab-humanoid" aria-controls="results-humanoid" aria-selected="false" tabindex="-1">Humanoid retargeting<span>LAFAN1 · AMASS · OMOMO</span></button>
+ </div>
+ <div id="results-dex" class="results-panel" role="tabpanel" aria-labelledby="results-tab-dex" tabindex="0">
+  <div class="results-heading"><div><h3>Bimanual object tracking</h3><p>OakInk2 · Two Sharpa hands · 1,352 GRASP tasks</p></div><span class="results-legend">↑ Higher is better &nbsp; ↓ Lower is better</span></div>
+  <div class="results-table-scroll" role="region" aria-label="OakInk2 comparison table" tabindex="0">
+   <table class="results-table dex-results" aria-describedby="dex-results-note"><caption class="sr-only">Dexterous retargeting on OakInk2. Bold values are the best reported values in each column.</caption>
+    <thead><tr><th scope="col">Method</th><th scope="col">Success <span>(%) ↑</span></th><th scope="col">Object position <span>(m) ↓</span></th><th scope="col">Object rotation <span>(rad) ↓</span></th></tr></thead>
+    <tbody><tr><th scope="row">Dex-retargeting</th><td>28.6</td><td>0.08</td><td>0.62</td></tr>
+<tr><th scope="row">SPIDER mjwp</th><td>71.4</td><td>0.04</td><td>0.57</td></tr>
+<tr><th scope="row">SPIDER mjwp_act</th><td>77.1</td><td>0.04</td><td>0.42</td></tr>
+<tr><th scope="row">Do-as-I-Do (Sharpa)</th><td>81.0</td><td><strong>0.03</strong></td><td>0.15</td></tr>
+<tr class="result-ablation"><th scope="row">↳ w/o transition reward</th><td>79.0</td><td><strong>0.03</strong></td><td>0.14</td></tr>
+<tr class="result-ablation"><th scope="row">↳ annealed sampling only</th><td>72.0</td><td>0.08</td><td>0.32</td></tr>
+<tr class="result-ours"><th scope="row">GRASP</th><td><strong>94.1</strong></td><td><strong>0.03</strong></td><td><strong>0.12</strong></td></tr>
+</tbody>
+   </table>
+  </div>
+  <p class="results-note" id="dex-results-note">Baseline values are reported in <a href="https://arxiv.org/abs/2609.35318" target="_blank" rel="noopener">DexAgent, Table 2 (OakInk)</a>, on that work’s clips; they were not rerun on the GRASP task set. GRASP evaluates the complete 1,352-task OakInk2 collection. Evaluation sets differ. Bold indicates the best reported value, including ties.</p>
+  <details class="results-protocol"><summary>Evaluation details</summary><p>A GRASP task succeeds when mean object position error is below 10 cm and mean rotation error is below 0.5 rad. Execution failures count as failures. Error means use jointly finite position–rotation error pairs. Baseline success rates follow their original reporting.</p></details>
+ </div>
+ <div id="results-humanoid" class="results-panel" role="tabpanel" aria-labelledby="results-tab-humanoid" tabindex="0" hidden>
+  <div class="results-heading"><div><h3>Whole-body motion tracking</h3><p>Unitree G1 · Open-loop robot and object tracking</p></div><span class="results-legend">All errors ↓ &nbsp; Lower is better</span></div>
+  <div class="results-table-scroll" role="region" aria-label="Humanoid comparison table" tabindex="0">
+   <table class="results-table humanoid-results" aria-describedby="humanoid-results-note"><caption class="sr-only">Humanoid retargeting on LAFAN1, AMASS, and OMOMO. Bold values are the lowest errors for each dataset and metric.</caption>
+    <thead><tr><th scope="col" rowspan="2">Dataset</th><th scope="col" rowspan="2">Method</th><th scope="colgroup" colspan="3">Robot</th><th scope="colgroup" colspan="2">Object</th></tr><tr><th scope="col">Joint <span>e<sub>j</sub> ↓</span></th><th scope="col">Translation <span>e<sub>t</sub> ↓</span></th><th scope="col">Orientation <span>e<sub>r</sub> ↓</span></th><th scope="col">Translation <span>e<sub>t</sub> ↓</span></th><th scope="col">Orientation <span>e<sub>r</sub> ↓</span></th></tr></thead>
+<tbody>
+<tr><th scope="rowgroup" rowspan="3" class="dataset-label">LAFAN1</th><th scope="row">GMR</th><td>1.08</td><td>2.01</td><td>2.40</td><td>—</td><td>—</td></tr>
+<tr><th scope="row">SPIDER</th><td>0.58</td><td>0.11</td><td>0.07</td><td>—</td><td>—</td></tr>
+<tr class="result-ours"><th scope="row">GRASP</th><td><strong>0.30</strong></td><td><strong>0.02</strong></td><td><strong>0.06</strong></td><td>—</td><td>—</td></tr>
+</tbody>
+<tbody>
+<tr><th scope="rowgroup" rowspan="3" class="dataset-label">AMASS</th><th scope="row">GMR</th><td>6.2</td><td>4.1</td><td>18.7</td><td>—</td><td>—</td></tr>
+<tr><th scope="row">SPIDER</th><td>0.75</td><td>0.23</td><td><strong>0.08</strong></td><td>—</td><td>—</td></tr>
+<tr class="result-ours"><th scope="row">GRASP</th><td><strong>0.59</strong></td><td><strong>0.05</strong></td><td>0.12</td><td>—</td><td>—</td></tr>
+</tbody>
+<tbody>
+<tr><th scope="rowgroup" rowspan="3" class="dataset-label">OMOMO</th><th scope="row">GMR</th><td>0.57</td><td>1.43</td><td>2.28</td><td>1.18</td><td>1.68</td></tr>
+<tr><th scope="row">SPIDER</th><td>0.83</td><td>0.20</td><td>0.17</td><td>0.18</td><td><strong>0.06</strong></td></tr>
+<tr class="result-ours"><th scope="row">GRASP</th><td><strong>0.21</strong></td><td><strong>0.06</strong></td><td><strong>0.06</strong></td><td><strong>0.03</strong></td><td>0.13</td></tr>
+</tbody>
+   </table>
+  </div>
+  <p class="results-note" id="humanoid-results-note">GMR and SPIDER values are reported in <a href="https://arxiv.org/abs/2511.09484" target="_blank" rel="noopener">SPIDER, Table 2</a>. GRASP uses SPIDER’s Unitree G1 scenes, tracking objective, and error definitions. Object errors apply to the box in OMOMO only. Bold indicates the lowest reported error within each dataset.</p>
+  <details class="results-protocol"><summary>Evaluation details</summary><p>GRASP evaluates 40 LAFAN1 clips (first 10 seconds), 10 AMASS clips (full length), and 2 OMOMO move_largebox clips. Joint errors are joint-angle difference norms; translation and orientation errors are pelvis-position and quaternion difference norms, averaged over 60 Hz frames. Object errors use the corresponding object poses.</p></details>
+ </div>
 </section>
 </main>
 <footer class="page-width"><a href="#top">Back to top ↑</a><a href="https://github.com/ComputationalRobotics/GRASP">Computational Robotics ↗</a></footer>

@@ -71,3 +71,8 @@ fetch('media.json?v=4').then(response=>{if(!response.ok)throw new Error('Could n
 if(paused)document.querySelectorAll('video').forEach(v=>v.pause());
 revealElements.forEach(element=>{element.inert=true;});
 updatePauseButton();onScroll();
+
+// Independent result tabs: preserve all existing video and robot-tab behavior.
+const resultTabs=[...document.querySelectorAll('.results-tabs [role="tab"]')];
+function selectResult(tab){resultTabs.forEach(item=>{const selected=item===tab;item.setAttribute('aria-selected',String(selected));item.tabIndex=selected?0:-1;document.getElementById(item.getAttribute('aria-controls')).hidden=!selected;});}
+resultTabs.forEach((tab,index)=>{tab.addEventListener('click',()=>selectResult(tab));tab.addEventListener('keydown',event=>{let next;if(event.key==='ArrowRight')next=(index+1)%resultTabs.length;else if(event.key==='ArrowLeft')next=(index+resultTabs.length-1)%resultTabs.length;else if(event.key==='Home')next=0;else if(event.key==='End')next=resultTabs.length-1;else return;event.preventDefault();selectResult(resultTabs[next]);resultTabs[next].focus();});});
