@@ -25,7 +25,7 @@ function loadVideo(video){if(video.dataset.src&&!video.src){video.src=video.data
 function play(video){loadVideo(video);video.muted=true;if(!paused){const promise=video.play();if(promise)promise.catch(()=>{});}}
 function updatePauseButton(){pauseButton.innerHTML=paused?'<span aria-hidden="true">▶</span> Play videos':'<span aria-hidden="true">Ⅱ</span> Pause videos';pauseButton.setAttribute('aria-pressed',String(paused));}
 function updateHeroVideo(){backgrounds.forEach((bg,i)=>{const video=bg.querySelector('video');if(!video)return;if(i===activePage&&hero.getBoundingClientRect().bottom>0&&!paused&&!document.hidden)play(video);else video.pause();});}
-function selectPage(index){const previous=activePage;activePage=index;document.querySelectorAll('.site-header nav a').forEach((a,i)=>{a.classList.toggle('active',i===index);if(i===index)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});backgrounds.forEach((bg,i)=>{bg.classList.toggle('previous',i===previous&&previous!==index);bg.classList.toggle('active',i===index);});pageButtons.forEach((button,i)=>{button.classList.toggle('active',i===index);button.setAttribute('aria-pressed',String(i===index));});document.querySelector('#hero-count').textContent=`0${index+1} / 04`;document.querySelector('#hero-category').textContent=pageNames[index];document.querySelector('#hero-speed').textContent=index<2?'2× speed':'';updateHeroVideo();}
+function selectPage(index){const previous=activePage;activePage=index;backgrounds.forEach((bg,i)=>{bg.classList.toggle('previous',i===previous&&previous!==index);bg.classList.toggle('active',i===index);});pageButtons.forEach((button,i)=>{button.classList.toggle('active',i===index);button.setAttribute('aria-pressed',String(i===index));});document.querySelector('#hero-count').textContent=`0${index+1} / 04`;document.querySelector('#hero-category').textContent=pageNames[index];document.querySelector('#hero-speed').textContent=index<2?'2× speed':'';updateHeroVideo();}
 let scrollQueued=false;
 function onScroll(){
   if(scrollQueued)return;
@@ -38,7 +38,7 @@ function onScroll(){
     document.querySelector('#scroll-label').textContent=progress<1?'Scroll to reveal':'Scroll to explore';
     revealElements.forEach(element=>{element.inert=progress===0;});
     header.classList.toggle('is-light',rect.bottom<90);
-    updateHeroVideo();syncCarousel();scrollQueued=false;
+    updateHeroVideo();syncCarousel();updateSectionNavigation();scrollQueued=false;
   });
 }
 window.addEventListener('scroll',onScroll,{passive:true});window.addEventListener('resize',onScroll);
@@ -58,8 +58,16 @@ document.addEventListener('visibilitychange',()=>{
 });
 const videoObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{const video=entry.target;if(entry.isIntersecting){visibleVideos.add(video);play(video);}else{visibleVideos.delete(video);video.pause();}});},{rootMargin:'100px 0px',threshold:.05});
 const navLinks=[...document.querySelectorAll('.site-header nav a')];
-const sectionObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)navLinks.forEach(a=>{const active=a.hash===`#${entry.target.id}`;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});});},{rootMargin:'-10% 0px -65% 0px'});
-document.querySelectorAll('.demo-section').forEach(section=>sectionObserver.observe(section));
+const navSections=[...document.querySelectorAll('[data-nav-section]')];
+function updateSectionNavigation(){
+  const line=header.getBoundingClientRect().bottom+Math.min(200,innerHeight*.25);
+  let current=hero.getBoundingClientRect().bottom>line?'overview':navSections[0].id;
+  navSections.forEach(section=>{if(section.getBoundingClientRect().top<=line)current=section.id;});
+  if(Math.ceil(scrollY+innerHeight)>=document.documentElement.scrollHeight-2)current=navSections[navSections.length-1].id;
+  navLinks.forEach(link=>{const active=link.hash===`#${current}`;link.classList.toggle('active',active);if(active)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});
+}
+// Keep section links accurate after the asynchronously inserted galleries change page height.
+new ResizeObserver(onScroll).observe(document.querySelector('main'));
 // Simulation clips form 4 x 4 walls that link to the full visualizations; humanoid clips go to their robot's wall.
 function addSimTile(clip){const tile=document.createElement('div');tile.className='sim-tile';const video=document.createElement('video');video.dataset.src=clip.src;video.poster=clip.poster;video.muted=true;video.defaultMuted=true;video.loop=true;video.playsInline=true;video.preload='none';video.setAttribute('aria-hidden','true');video.setAttribute('disablepictureinpicture','');tile.append(video);if(clip.speed>1){const badge=document.createElement('span');badge.className='speed-badge';badge.textContent=`${clip.speed}×`;tile.append(badge);}tile.title=clip.title;document.querySelector(`#${clip.group}${clip.robot?`-${clip.robot}`:''}-gallery`).append(tile);videoObserver.observe(video);}
 // Robot tabs swap the visible humanoid wall; the hidden walls leave the viewport observer, which pauses them.
@@ -76,3 +84,10 @@ updatePauseButton();onScroll();
 const resultTabs=[...document.querySelectorAll('.results-tabs [role="tab"]')];
 function selectResult(tab){resultTabs.forEach(item=>{const selected=item===tab;item.setAttribute('aria-selected',String(selected));item.tabIndex=selected?0:-1;document.getElementById(item.getAttribute('aria-controls')).hidden=!selected;});}
 resultTabs.forEach((tab,index)=>{tab.addEventListener('click',()=>selectResult(tab));tab.addEventListener('keydown',event=>{let next;if(event.key==='ArrowRight')next=(index+1)%resultTabs.length;else if(event.key==='ArrowLeft')next=(index+resultTabs.length-1)%resultTabs.length;else if(event.key==='Home')next=0;else if(event.key==='End')next=resultTabs.length-1;else return;event.preventDefault();selectResult(resultTabs[next]);resultTabs[next].focus();});});
+
+const copyCitation=document.querySelector('#copy-citation');
+copyCitation.addEventListener('click',async()=>{
+  const status=document.querySelector('#citation-status');
+  try{await navigator.clipboard.writeText(document.querySelector('#citation-text').textContent.trim());status.textContent='BibTeX copied.';}
+  catch{status.textContent='Select the citation below and copy it.';document.querySelector('.citation-code').focus();}
+});

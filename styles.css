@@ -125,3 +125,19 @@
 .abstract-copy{max-width:900px;margin-inline:auto;font-size:15px;line-height:1.9;color:#514b4e}
 .abstract-copy p+p{margin-top:18px}
 @media(max-width:650px){.abstract-section{padding-top:40px;padding-bottom:44px}.abstract-section h2{font-size:38px;margin-bottom:25px}.abstract-copy{font-size:13px;line-height:1.85}}
+
+/* Seven editorial sections; navigation is independent of the four hero backgrounds. */
+.site-header nav{gap:24px}
+.content-section{padding-top:75px;padding-bottom:75px;border-top:1px solid var(--line)}
+.overview-section{border-top:0}
+.overview-video-slot{aspect-ratio:16/9;max-width:1100px;margin:34px auto 0;display:grid;place-items:center;background:#161315;color:#bdb2b6;border:1px solid #2f2529;border-radius:4px;font-size:14px;letter-spacing:.04em}
+.method-figure-slot{height:280px;margin:34px 0 25px;display:grid;place-items:center;border:1px dashed #d5c5cb;background:#faf8f9;border-radius:4px;color:#89767d;font-size:14px}
+.method-explanation{max-width:900px;font-size:15px;line-height:1.9;color:#514b4e}
+.citation-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}
+.copy-citation{border:1px solid var(--line);background:#fff;border-radius:24px;padding:10px 18px;color:var(--crimson);font-size:12px;font-weight:700}
+.copy-citation:hover{background:#a51c300b;border-color:var(--crimson)}
+.citation-code{margin:0;padding:25px 28px;background:#faf8f9;border:1px solid var(--line);border-radius:5px;font:12px/1.9 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;color:#514b4e}
+.citation-status{min-height:20px;margin-top:10px;font-size:11px;color:var(--crimson)}
+@media(max-width:850px){.site-header{height:96px;flex-wrap:wrap;align-content:center;gap:12px;padding-block:12px}.site-header nav{width:100%;justify-content:space-between;gap:10px;font-size:11px}.site-header nav a{padding:0 0 5px}.hero-category{top:115px;bottom:auto}html{scroll-padding-top:115px}}
+@media(max-width:650px){.site-header nav{gap:7px;font-size:10px}.content-section{padding-top:50px;padding-bottom:50px}.overview-video-slot{margin-top:26px;font-size:12px}.method-figure-slot{height:190px;margin-top:26px;font-size:12px}.method-explanation{font-size:13px;line-height:1.85}.citation-code{padding:18px;font-size:10px}.copy-citation{font-size:10px;padding:9px 13px}.citation-heading{gap:15px}}
+@media(max-width:360px){.site-header nav{font-size:9px;gap:5px}}
