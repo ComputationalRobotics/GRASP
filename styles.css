@@ -72,7 +72,7 @@
 .resource-action:disabled{cursor:default;opacity:1;-webkit-text-fill-color:currentColor}
 .resource-action-live{transition:background .2s,border-color .2s}
 .resource-action-live:hover{background:#ffffff20;border-color:#fff}
-#tldr{scroll-margin-top:20px}
+#method{scroll-margin-top:20px}
 @media(max-width:650px){.hero-actions{gap:8px;margin-top:20px;width:100%;max-width:440px}.resource-action{min-width:0;flex:1 0 calc((100% - 24px)/4);min-height:42px;padding:8px 6px;font-size:11px;gap:5px}.resource-icon{width:15px;height:15px}.hero-copy .hero-actions .hero-action{min-height:42px;gap:16px}}
 @media(max-height:700px) and (min-width:651px){.hero-actions{margin-top:16px}}
 
@@ -117,3 +117,11 @@
 .results-protocol summary{cursor:pointer;font-weight:600;color:var(--ink);width:fit-content}
 .results-protocol p{margin-top:8px;max-width:930px}
 @media(max-width:650px){.results-section{padding-top:55px;padding-bottom:60px}.results-tabs{gap:20px;margin-top:24px;margin-bottom:24px}.results-tabs button{font-size:12px;flex:1}.results-tabs button span{font-size:9px}.results-heading{display:block}.results-heading h3{font-size:20px}.results-legend{display:block;margin-top:10px;font-size:10px}.results-table th,.results-table td{padding:12px 14px}.dex-results{min-width:560px}.results-note{font-size:10px}.results-protocol{font-size:10px}}
+
+/* Paper abstract introduces the work after the cinematic opening. */
+.abstract-section{padding-top:65px;padding-bottom:68px;border-bottom:1px solid var(--line)}
+.abstract-section h2{font:400 48px/1.1 var(--serif);letter-spacing:-.035em;text-align:center;margin:0 0 32px}
+.abstract-section h2::after{content:'';display:block;width:34px;height:3px;background:var(--crimson);margin:18px auto 0}
+.abstract-copy{max-width:900px;margin-inline:auto;font-size:15px;line-height:1.9;color:#514b4e}
+.abstract-copy p+p{margin-top:18px}
+@media(max-width:650px){.abstract-section{padding-top:40px;padding-bottom:44px}.abstract-section h2{font-size:38px;margin-bottom:25px}.abstract-copy{font-size:13px;line-height:1.85}}

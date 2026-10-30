@@ -56,10 +56,13 @@ Institutional logo sources (the Harvard shield is extracted from the official SV
 
 ## Project resources
 
-The hero links are ordered Paper, Code, Dataset, TL;DR, then Explore the demos. Paper, Code, and Dataset are intentionally disabled without release-status labels until public release URLs are provided. The buttons use document, GitHub, Hugging Face, and X icons respectively. The Hugging Face SVG comes from https://huggingface.co/front/assets/huggingface_logo-noborder.svg. TL;DR links to the method overview at `#tldr`.
+The hero links are ordered Paper, Code, Dataset, TL;DR, then Explore the demos. Paper, Code, and Dataset are intentionally disabled without release-status labels until public release URLs are provided. The buttons use document, GitHub, Hugging Face, and X icons respectively. The Hugging Face SVG comes from https://huggingface.co/front/assets/huggingface_logo-noborder.svg. TL;DR is reserved for the Twitter/X announcement post. It is disabled without a release-status label until the post URL is available.
 
 ## Real humanoid refresh (2026-10-30)
 The real humanoid section shows all ten `humanoid_new` clips plus six original demonstrations, excluding the second pushing view. The sixteen clips use a fixed shuffled order (seed 20261030), a four-column desktop grid, and a two-column mobile grid. They play at original source speed, without captions, numbering, or speed badges. `media/real-humanoid/` contains freshly encoded H.264 960 × 540 derivatives and posters; `sourceFile` in the manifest records each original file relative to the GRASP source directory. Audio is removed and original timestamps are preserved. The humanoid hero uses the same 16 clips in a separate 4 × 4 mosaic at 2× speed, with today’s crawl and box-handling footage in the center four positions.
 
 ## Quantitative results
 The final `#results` section has independent accessible tabs for OakInk2 dexterous retargeting and G1 humanoid retargeting (LAFAN1, AMASS, OMOMO). Values are transcribed from Overleaf commit `cbb75e9`, `arxiv/generated/main_table.tex` and `humanoid_table.tex`. Baseline provenance and evaluation-scope notes are visible beneath each table; protocol details expand on demand. GRASP rows have a pale crimson background; numerical bolding denotes best reported values per metric (within each humanoid dataset), including ties. HOT3D and cross-embodiment results are not included. Existing demo sections are unchanged.
+
+## Abstract and overview
+The full paper abstract (Overleaf commit `cbb75e9`, `arxiv/main.tex`) follows the opening video stage, before the real demonstration galleries. It is split into three paragraphs for web readability without changing its wording. The existing short method summary keeps the `#method` anchor; a method figure and overview video will be added when available.
