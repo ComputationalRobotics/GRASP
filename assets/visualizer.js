@@ -4,11 +4,10 @@
 const PAGE_SIZE=48;
 const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const $=id=>document.getElementById(id);
-const grid=$('grid'),more=$('more'),empty=$('empty'),count=$('count'),facetBox=$('facets'),search=$('search'),sort=$('sort');
+const grid=$('grid'),more=$('more'),empty=$('empty'),facetBox=$('facets'),search=$('search'),sort=$('sort');
 const viewer=$('viewer'),viewerVideo=$('viewer-video');
 let data={media:'',facets:[]},clips=[],filtered=[],shown=0,current=-1;
 const selected={},named={},hasOther={};
-const fmt=n=>n.toLocaleString('en-US');
 const media=(clip,kind)=>`${data.media}${kind==='poster'?'posters':'videos'}/${clip.id}.${kind==='poster'?'jpg':'mp4'}`;
 // Values beyond a facet's `top` most common share one "Other" entry.
 const facetValue=(clip,facet)=>named[facet.key].includes(clip.facets[facet.key])?clip.facets[facet.key]:'Other';
@@ -21,7 +20,6 @@ const videoObserver=new IntersectionObserver(entries=>{entries.forEach(({target:
 const moreObserver=new IntersectionObserver(entries=>{if(entries[0].isIntersecting)renderPage();},{rootMargin:'400px 0px'});
 
 function matchesQuery(clip){const q=search.value.trim().toLowerCase();return !q||[clip.title,clip.id,clip.subtitle||''].some(s=>s.toLowerCase().includes(q));}
-// `skip` leaves one facet out, so each facet's counts reflect the other facets' selections.
 function matches(clip,skip){return matchesQuery(clip)&&data.facets.every(f=>f.key===skip||selected[f.key].size===0||selected[f.key].has(facetValue(clip,f)));}
 function shuffle(){clips.forEach(clip=>{clip.rank=Math.random();});}
 function sorted(list){
@@ -31,17 +29,13 @@ function sorted(list){
 
 function renderFacets(){
   facetBox.replaceChildren(...data.facets.map(facet=>{
-    const counts={};
-    clips.filter(clip=>matches(clip,facet.key)).forEach(clip=>{const v=facetValue(clip,facet);counts[v]=(counts[v]||0)+1;});
-    const total=Object.values(counts).reduce((a,b)=>a+b,0);
     const values=[...named[facet.key],...(hasOther[facet.key]?['Other']:[])];
     const list=document.createElement('ul');list.className='filter-list';
-    list.append(...[['All',total],...values.map(v=>[v,counts[v]||0])].map(([value,n],i)=>{
+    list.append(...['All',...values].map((value,i)=>{
       const li=document.createElement('li');const box=document.createElement('input');box.type='checkbox';
       const isOn=i===0?selected[facet.key].size===0:selected[facet.key].has(value);box.checked=isOn;li.classList.toggle('selected',isOn);
       const name=document.createElement('span');name.textContent=value;
-      const num=document.createElement('span');num.className='count';num.textContent=fmt(n);
-      li.append(box,name,num);
+      li.append(box,name);
       li.addEventListener('click',()=>{const set=selected[facet.key];if(i===0)set.clear();else if(!set.delete(value))set.add(value);update();});
       return li;
     }));
@@ -75,7 +69,7 @@ function renderPage(){
   grid.append(...filtered.slice(shown,end).map((clip,i)=>card(clip,shown+i)));
   shown=end;
   const left=filtered.length-shown;
-  more.hidden=left===0;more.textContent=`Show ${fmt(Math.min(left,PAGE_SIZE))} more · ${fmt(left)} left`;
+  more.hidden=left===0;more.textContent='Show more';
   // Re-observing reports the button's current position, so a tall screen keeps filling.
   moreObserver.unobserve(more);moreObserver.observe(more);
 }
@@ -85,7 +79,7 @@ function update(){
   videoObserver.disconnect();
   grid.querySelectorAll('video').forEach(video=>{video.pause();video.removeAttribute('src');video.load();});
   grid.replaceChildren();shown=0;
-  empty.hidden=filtered.length>0;count.textContent=`${fmt(filtered.length)} of ${fmt(clips.length)} trajectories`;
+  empty.hidden=filtered.length>0;
   renderFacets();renderPage();
   const params=new URLSearchParams();
   data.facets.forEach(f=>{if(selected[f.key].size)params.set(f.key,[...selected[f.key]].join(','));});
