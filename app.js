@@ -57,6 +57,7 @@ document.addEventListener('visibilitychange',()=>{
   syncCarousel();
 });
 const videoObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{const video=entry.target;if(entry.isIntersecting){visibleVideos.add(video);play(video);}else{visibleVideos.delete(video);video.pause();}});},{rootMargin:'100px 0px',threshold:.05});
+document.querySelectorAll('.policy-video-slot video').forEach(video=>videoObserver.observe(video));
 const navLinks=[...document.querySelectorAll('.site-header nav a')];
 const navSections=[...document.querySelectorAll('[data-nav-section]')];
 function updateSectionNavigation(){

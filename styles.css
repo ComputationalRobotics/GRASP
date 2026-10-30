@@ -155,6 +155,7 @@
 .policy-video-grasp figcaption{color:var(--crimson)}
 .policy-video-slot{aspect-ratio:16/9;background:#f6f3f4;border:1px dashed #d8ccd0;border-radius:4px;overflow:hidden}
 .policy-video-slot video{object-fit:contain}
+.policy-video-slot.is-filled{background:#fff;border:1px solid var(--line)}
 .policy-curves{margin-top:24px}
 .policy-curve-scroll{overflow-x:auto;padding:20px 12px 12px;border:1px solid var(--line);border-radius:5px;background:#fff;scrollbar-color:#c8a4af #f6f3f4}
 .policy-curve-scroll:focus-visible{outline:3px solid var(--crimson);outline-offset:4px}

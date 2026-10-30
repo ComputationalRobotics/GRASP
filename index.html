@@ -5,7 +5,7 @@
 <meta name="description" content="GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting. Real-world dexterous-hand and humanoid demonstrations.">
 <meta name="theme-color" content="#080808"><meta property="og:title" content="GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting"><meta property="og:type" content="website">
 <title>GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting</title>
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=17"><script defer src="app.js?v=10"></script><link rel="stylesheet" href="assets/method-insight.css?v=2"><script defer src="assets/method-insight.js?v=2"></script>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=18"><script defer src="app.js?v=11"></script><link rel="stylesheet" href="assets/method-insight.css?v=2"><script defer src="assets/method-insight.js?v=2"></script>
 </head>
 <body>
 <a class="skip-link" href="#tasks">Skip to demonstrations</a>
@@ -213,10 +213,9 @@
   <section class="policy-study" id="policy-dex" aria-labelledby="policy-dex-heading">
    <h4 id="policy-dex-heading">Dexterous hand</h4>
    <div class="policy-video-pair" aria-label="Dexterous-hand reference comparison">
-    <figure class="policy-video"><figcaption>Kinematic reference</figcaption><div class="policy-video-slot" id="policy-dex-kinematic" role="img" aria-label="Reserved video: dexterous-hand kinematic reference"></div></figure>
-    <figure class="policy-video policy-video-grasp"><figcaption>GRASP</figcaption><div class="policy-video-slot" id="policy-dex-grasp" role="img" aria-label="Reserved video: GRASP-refined dexterous-hand reference"></div></figure>
+    <figure class="policy-video"><figcaption>Kinematic reference</figcaption><div class="policy-video-slot is-filled" id="policy-dex-kinematic"><video muted loop playsinline preload="none" poster="media/policy/pen-spin-kinematic.jpg" data-src="media/policy/pen-spin-kinematic.mp4" aria-label="Kinematic reference for a continuous multi-axis pen spin on the Wuji hand"></video></div></figure>
+    <figure class="policy-video policy-video-grasp"><figcaption>GRASP</figcaption><div class="policy-video-slot is-filled" id="policy-dex-grasp"><video muted loop playsinline preload="none" poster="media/policy/pen-spin-grasp.jpg" data-src="media/policy/pen-spin-grasp.mp4" aria-label="GRASP-refined reference for the same pen spin on the Wuji hand"></video></div></figure>
    </div>
-   <!-- Replace the two empty slots above with the paired reference videos. -->
    <figure class="policy-curves">
     <div class="policy-curve-scroll policy-dex-curves" tabindex="0" role="region" aria-label="Dexterous-hand RL learning curves; scroll horizontally on narrow screens"><img src="assets/results/dex-policy-learning.png" width="2400" height="799" loading="lazy" decoding="async" alt="Four PPO learning curves comparing Original IK and After TO: episode reward, episode length, object position error, and shaft-angle error."></div>
     <figcaption><p>PPO tracking on nine single-axis pen-spinning clips. <strong>Original IK</strong> denotes kinematic references; <strong>After TO</strong> denotes GRASP-refined references. Curves show 100-iteration moving averages aggregated over the clips.</p><a href="assets/results/dex-policy-learning.png" target="_blank" rel="noopener" aria-label="View the dexterous-hand RL figure at full size">View full figure ↗</a></figcaption>
