@@ -1,12 +1,48 @@
 {
   "dex": [
-    ["whiteboard-writing", "tool-handling", "cup-handling", "pouring"],
-    ["object-interaction", "basket-handling", "whiteboard-erasing", "bimanual-coordination"],
-    ["pan-handling", "soft-object", "whiteboard-writing", "pouring"]
+    [
+      "whiteboard-writing",
+      "tool-handling",
+      "cup-handling",
+      "pouring"
+    ],
+    [
+      "object-interaction",
+      "basket-handling",
+      "whiteboard-erasing",
+      "bimanual-coordination"
+    ],
+    [
+      "pan-handling",
+      "soft-object",
+      "whiteboard-writing",
+      "pouring"
+    ]
   ],
   "humanoid": [
-    ["dancing", "kick-box", "kick-soccer", "walking"],
-    ["push-box-2", "pick-box", "push-box", "dancing"],
-    ["walking", "kick-soccer", "kick-box", "push-box-2"]
+    [
+      "real-humanoid/dancing",
+      "real-humanoid/new-01",
+      "real-humanoid/kick-box",
+      "real-humanoid/new-09"
+    ],
+    [
+      "real-humanoid/new-02",
+      "real-humanoid/new-10",
+      "real-humanoid/new-06",
+      "real-humanoid/pick-box"
+    ],
+    [
+      "real-humanoid/kick-soccer",
+      "real-humanoid/new-04",
+      "real-humanoid/new-08",
+      "real-humanoid/new-05"
+    ],
+    [
+      "real-humanoid/new-03",
+      "real-humanoid/push-box",
+      "real-humanoid/new-07",
+      "real-humanoid/walking"
+    ]
   ]
 }
