@@ -59,7 +59,7 @@
 </section>
 </section>
 <section class="method-section content-section page-width" id="method" data-nav-section aria-labelledby="method-heading">
- <div class="section-intro method-intro"><div><p class="section-index">Method / The insight</p><h2 id="method-heading">Every rollout<br>serves twice.</h2></div><p class="method-lede">A candidate motion today.<br><span>A search direction tomorrow.</span></p></div>
+ <h2 class="section-index" id="method-heading">Method</h2>
  <figure class="method-insight" id="method-insight" aria-labelledby="method-heading" aria-describedby="method-caption">
   <div class="mi-topline"><span class="mi-kicker">GRASP <span aria-hidden="true">/</span> Gradient recovery from archived samples</span><button class="mi-playback" type="button" hidden aria-pressed="false"><span class="mi-playback-icon" aria-hidden="true">Ⅱ</span><span class="mi-playback-label">Pause animation</span></button></div>
   <div class="mi-panels">
@@ -126,7 +126,7 @@
   </div>
   <div class="mi-return"><svg viewBox="0 0 1000 43" preserveAspectRatio="none" aria-hidden="true"><defs><marker id="mi-loop-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#a51c30"/></marker></defs><path class="mi-return-track" d="M850 1V15Q850 30 835 30H165Q150 30 150 15V3" marker-end="url(#mi-loop-arrow)"/><path class="mi-return-pulse" d="M850 1V15Q850 30 835 30H165Q150 30 150 15V3"/></svg><span>New evaluations return to the archive for the next fit</span></div>
   <div class="mi-controls" hidden role="group" aria-label="Animation steps"><button type="button" data-mi-step="0" aria-pressed="true"><span>01</span> Evaluate</button><button type="button" data-mi-step="1" aria-pressed="false"><span>02</span> Recover</button><button type="button" data-mi-step="2" aria-pressed="false"><span>03</span> Guide</button><button type="button" data-mi-step="3" aria-pressed="false"><span>04</span> Correct &amp; reuse</button></div>
-  <figcaption id="method-caption"><div class="mi-live-caption"><span class="mi-caption-label">The insight</span><p class="mi-caption-text">The same evaluations supply candidate motions and local gradient guidance.</p></div><span class="mi-disclaimer">Conceptual illustration</span></figcaption>
+  <figcaption id="method-caption"><div class="mi-live-caption"><span class="mi-caption-label">GRASP</span><p class="mi-caption-text">The same evaluations supply candidate motions and local gradient guidance.</p></div><span class="mi-disclaimer">Conceptual illustration</span></figcaption>
  </figure>
  <p class="method-explanation">GRASP fits local quadratic models to archived control–cost pairs, including rejected proposals. Their gradients guide new samples without differentiating through the simulator. Acceptance uses true simulator costs and a Metropolis–Hastings correction; new evaluations inform the next fit.</p>
 </section>
