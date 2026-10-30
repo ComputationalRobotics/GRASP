@@ -75,3 +75,9 @@
 #tldr{scroll-margin-top:20px}
 @media(max-width:650px){.hero-actions{gap:8px;margin-top:20px;width:100%;max-width:440px}.resource-action{min-width:0;flex:1 0 calc((100% - 24px)/4);min-height:42px;padding:8px 6px;font-size:11px;gap:5px}.resource-icon{width:15px;height:15px}.hero-copy .hero-actions .hero-action{min-height:42px;gap:16px}}
 @media(max-height:700px) and (min-width:651px){.hero-actions{margin-top:16px}}
+
+/* Real humanoid: sixteen original-speed clips without captions or speed labels. */
+.humanoid-gallery-spacing{height:40px}
+.humanoid-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+#humanoid-gallery .video-card{width:100%;grid-column:auto;justify-self:stretch}
+@media(max-width:650px){.humanoid-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.humanoid-gallery-spacing{height:28px}}

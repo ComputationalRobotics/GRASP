@@ -80,60 +80,148 @@
     "speed": 2
   },
   {
-    "id": "dancing",
-    "title": "Dancing",
-    "group": "humanoid",
-    "src": "media/dancing.mp4",
-    "poster": "media/dancing.jpg",
-    "speed": 2
-  },
-  {
-    "id": "kick-box",
+    "id": "real-kick-box",
     "title": "Kicking a box",
     "group": "humanoid",
-    "src": "media/kick-box.mp4",
-    "poster": "media/kick-box.jpg",
-    "speed": 2
+    "src": "media/real-humanoid/kick-box.mp4",
+    "poster": "media/real-humanoid/kick-box.jpg",
+    "speed": 1,
+    "sourceFile": "kick_box.mov"
   },
   {
-    "id": "kick-soccer",
-    "title": "Kicking a ball",
+    "id": "real-new-10",
+    "title": "Humanoid demonstration 10",
     "group": "humanoid",
-    "src": "media/kick-soccer.mp4",
-    "poster": "media/kick-soccer.jpg",
-    "speed": 2
+    "src": "media/real-humanoid/new-10.mp4",
+    "poster": "media/real-humanoid/new-10.jpg",
+    "speed": 1,
+    "sourceFile": "humanoid_new/10月30日(9).mov"
   },
   {
-    "id": "pick-box",
+    "id": "real-new-07",
+    "title": "Humanoid demonstration 7",
+    "group": "humanoid",
+    "src": "media/real-humanoid/new-07.mp4",
+    "poster": "media/real-humanoid/new-07.jpg",
+    "speed": 1,
+    "sourceFile": "humanoid_new/10月30日(6).mov"
+  },
+  {
+    "id": "real-pick-box",
     "title": "Lifting a box",
     "group": "humanoid",
-    "src": "media/pick-box.mp4",
-    "poster": "media/pick-box.jpg",
-    "speed": 2
+    "src": "media/real-humanoid/pick-box.mp4",
+    "poster": "media/real-humanoid/pick-box.jpg",
+    "speed": 1,
+    "sourceFile": "pick box.mov"
   },
   {
-    "id": "push-box",
+    "id": "real-new-08",
+    "title": "Humanoid demonstration 8",
+    "group": "humanoid",
+    "src": "media/real-humanoid/new-08.mp4",
+    "poster": "media/real-humanoid/new-08.jpg",
+    "speed": 1,
+    "sourceFile": "humanoid_new/10月30日(7).mov"
+  },
+  {
+    "id": "real-kick-soccer",
+    "title": "Kicking a ball",
+    "group": "humanoid",
+    "src": "media/real-humanoid/kick-soccer.mp4",
+    "poster": "media/real-humanoid/kick-soccer.jpg",
+    "speed": 1,
+    "sourceFile": "kick_soccer.mov"
+  },
+  {
+    "id": "real-new-06",
+    "title": "Humanoid demonstration 6",
+    "group": "humanoid",
+    "src": "media/real-humanoid/new-06.mp4",
+    "poster": "media/real-humanoid/new-06.jpg",
+    "speed": 1,
+    "sourceFile": "humanoid_new/10月30日(5).mov"
+  },
+  {
+    "id": "real-new-05",
+    "title": "Humanoid demonstration 5",
+    "group": "humanoid",
+    "src": "media/real-humanoid/new-05.mp4",
+    "poster": "media/real-humanoid/new-05.jpg",
+    "speed": 1,
+    "sourceFile": "humanoid_new/10月30日(4).mov"
+  },
+  {
+    "id": "real-push-box",
     "title": "Pushing a box",
     "group": "humanoid",
-    "src": "media/push-box.mp4",
-    "poster": "media/push-box.jpg",
-    "speed": 2
+    "src": "media/real-humanoid/push-box.mp4",
+    "poster": "media/real-humanoid/push-box.jpg",
+    "speed": 1,
+    "sourceFile": "push_box.mov"
   },
   {
-    "id": "push-box-2",
-    "title": "Pushing a box \u00b7 second view",
+    "id": "real-new-04",
+    "title": "Humanoid demonstration 4",
     "group": "humanoid",
-    "src": "media/push-box-2.mp4",
-    "poster": "media/push-box-2.jpg",
-    "speed": 2
+    "src": "media/real-humanoid/new-04.mp4",
+    "poster": "media/real-humanoid/new-04.jpg",
+    "speed": 1,
+    "sourceFile": "humanoid_new/10月30日(3).mov"
   },
   {
-    "id": "walking",
+    "id": "real-new-09",
+    "title": "Humanoid demonstration 9",
+    "group": "humanoid",
+    "src": "media/real-humanoid/new-09.mp4",
+    "poster": "media/real-humanoid/new-09.jpg",
+    "speed": 1,
+    "sourceFile": "humanoid_new/10月30日(8).mov"
+  },
+  {
+    "id": "real-dancing",
+    "title": "Dancing",
+    "group": "humanoid",
+    "src": "media/real-humanoid/dancing.mp4",
+    "poster": "media/real-humanoid/dancing.jpg",
+    "speed": 1,
+    "sourceFile": "dancing.mov"
+  },
+  {
+    "id": "real-new-01",
+    "title": "Humanoid demonstration 1",
+    "group": "humanoid",
+    "src": "media/real-humanoid/new-01.mp4",
+    "poster": "media/real-humanoid/new-01.jpg",
+    "speed": 1,
+    "sourceFile": "humanoid_new/10月30日.mov"
+  },
+  {
+    "id": "real-walking",
     "title": "Walking",
     "group": "humanoid",
-    "src": "media/walking.mp4",
-    "poster": "media/walking.jpg",
-    "speed": 2
+    "src": "media/real-humanoid/walking.mp4",
+    "poster": "media/real-humanoid/walking.jpg",
+    "speed": 1,
+    "sourceFile": "walking.mov"
+  },
+  {
+    "id": "real-new-03",
+    "title": "Humanoid demonstration 3",
+    "group": "humanoid",
+    "src": "media/real-humanoid/new-03.mp4",
+    "poster": "media/real-humanoid/new-03.jpg",
+    "speed": 1,
+    "sourceFile": "humanoid_new/10月30日(2).mov"
+  },
+  {
+    "id": "real-new-02",
+    "title": "Humanoid demonstration 2",
+    "group": "humanoid",
+    "src": "media/real-humanoid/new-02.mp4",
+    "poster": "media/real-humanoid/new-02.jpg",
+    "speed": 1,
+    "sourceFile": "humanoid_new/10月30日(1).mov"
   },
   {
     "id": "oakbi_934_pour",
