@@ -5,7 +5,7 @@
 <meta name="description" content="GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting. Real-world dexterous-hand and humanoid demonstrations.">
 <meta name="theme-color" content="#080808"><meta property="og:title" content="GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting"><meta property="og:type" content="website">
 <title>GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting</title>
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=14"><script defer src="app.js?v=9"></script>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=15"><script defer src="app.js?v=10"></script>
 </head>
 <body>
 <a class="skip-link" href="#tasks">Skip to demonstrations</a>
@@ -15,7 +15,7 @@
  <div class="hero-stage">
   <div class="hero-background active" data-background="0"><video id="hero-dex" muted loop playsinline autoplay preload="auto" poster="media/hero-dex-grid12.jpg" aria-hidden="true"><source src="media/hero-dex-grid12.mp4" type="video/mp4"></video></div>
   <div class="hero-background" data-background="1"><video id="hero-humanoid" muted loop playsinline preload="metadata" poster="media/hero-humanoid-grid16.jpg" aria-hidden="true" data-src="media/hero-humanoid-grid16.mp4"></video></div>
-  <div class="hero-background simulation-background" data-background="2" aria-hidden="true"><div class="empty-mosaic"></div></div>
+  <div class="hero-background" data-background="2"><video id="hero-sim-dex" muted loop playsinline preload="metadata" poster="media/hero-sim-dex-scroll.jpg" aria-hidden="true" data-src="media/hero-sim-dex-scroll.mp4"></video></div>
   <div class="hero-background" data-background="3"><video id="hero-sim-humanoid" muted loop playsinline preload="metadata" poster="media/hero-sim-humanoid-scroll.jpg" aria-hidden="true" data-src="media/hero-sim-humanoid-scroll.mp4"></video></div>
   <div class="hero-shade"></div>
   <div class="hero-copy page-width">
@@ -67,9 +67,10 @@
 <section id="sim" data-nav-section aria-label="Simulation">
 <section class="demo-section simulation-section page-width" id="sim-dex">
  <div class="section-intro"><p class="section-index">Simulation / Dexterous hands</p><h2><span>GRASP</span><br>for dexterous simulation.</h2></div>
- <div class="section-toolbar"><span>16 selected from 1,265 successful OakInk2 bimanual trajectories</span><span>Clips over 8 s sped up · speed marked</span></div>
- <a class="sim-wall" href="oakink2/" aria-label="Open the visualization of all 1,265 OakInk2 trajectories"><div class="sim-wall-grid" id="sim-dex-gallery"></div><span class="sim-wall-overlay" aria-hidden="true"><span>Open visualization →</span></span></a>
- <a class="sim-wall-link" href="oakink2/">Browse all 1,265 trajectories →</a>
+ <div class="section-toolbar"><span>16 selected per hand from 166 OakInk2 bimanual trajectories</span><span>Clips over 8 s sped up · speed marked</span></div>
+ <div class="robot-tabs" role="tablist" aria-label="Dexterous hand"><button type="button" role="tab" id="tab-sharpa" aria-controls="sim-dex-sharpa-gallery" aria-selected="true">Sharpa<span>50</span></button><button type="button" role="tab" id="tab-xhand" aria-controls="sim-dex-xhand-gallery" aria-selected="false" tabindex="-1">XHand<span>73</span></button><button type="button" role="tab" id="tab-wuji" aria-controls="sim-dex-wuji-gallery" aria-selected="false" tabindex="-1">Wuji<span>43</span></button></div>
+ <a class="sim-wall" href="oakink2/" aria-label="Open the visualization of all 166 OakInk2 trajectories"><div class="sim-wall-grid" id="sim-dex-sharpa-gallery" role="tabpanel" aria-labelledby="tab-sharpa"></div><div class="sim-wall-grid" id="sim-dex-xhand-gallery" role="tabpanel" aria-labelledby="tab-xhand" hidden></div><div class="sim-wall-grid" id="sim-dex-wuji-gallery" role="tabpanel" aria-labelledby="tab-wuji" hidden></div><span class="sim-wall-overlay" aria-hidden="true"><span>Open visualization →</span></span></a>
+ <a class="sim-wall-link" href="oakink2/">Browse all 166 trajectories →</a>
 </section>
 <section class="demo-section simulation-section page-width" id="sim-humanoid">
  <div class="section-intro"><p class="section-index">Simulation / Humanoid</p><h2><span>GRASP</span><br>for humanoid simulation.</h2></div>
@@ -126,7 +127,7 @@
    </table>
   </div>
   <p class="results-note" id="humanoid-results-note">GMR and SPIDER values are reported in <a href="https://arxiv.org/abs/2511.09484" target="_blank" rel="noopener">SPIDER, Table 2</a>. GRASP uses SPIDER’s Unitree G1 scenes, tracking objective, and error definitions. Object errors apply to the box in OMOMO only. Bold indicates the lowest reported error within each dataset.</p>
-  <details class="results-protocol"><summary>Evaluation details</summary><p>GRASP evaluates 40 LAFAN1 clips (first 10 seconds), 10 AMASS clips (full length), and 2 OMOMO move_largebox clips. Joint errors are joint-angle difference norms; translation and orientation errors are pelvis-position and quaternion difference norms, averaged over 60 Hz frames. Object errors use the corresponding object poses.</p></details>
+  <details class="results-protocol"><summary>Evaluation details</summary><p>Joint errors are joint-angle difference norms; translation and orientation errors are pelvis-position and quaternion difference norms, averaged over 60 Hz frames. Object errors use the corresponding object poses.</p></details>
  </div>
 </section>
 <section class="abstract-section page-width" id="abstract" data-nav-section aria-labelledby="abstract-heading">

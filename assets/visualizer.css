@@ -21,8 +21,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 
 .display-note{max-width:1600px;margin:0 auto;padding:10px 32px;font-size:13px;line-height:1.6;color:var(--muted);border-bottom:1px solid var(--line)}
 .display-note strong{font-weight:700}
-.display-note .amber{color:var(--amber)}
-.display-note .blue{color:var(--blue)}
+.display-note .green{color:#2f7a5b}
+.display-note .tan{color:#a9742f}
 
 .layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:32px;max-width:1600px;margin:0 auto;padding:28px 32px 60px}
 .sidebar{position:sticky;top:96px;align-self:start;display:grid;grid-template-columns:minmax(0,1fr);gap:14px;max-height:calc(100vh - 110px);overflow:hidden auto;padding-bottom:4px}
@@ -59,6 +59,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{ou
 .viewer::backdrop{background:#1e1e1ecc}
 .viewer-media{aspect-ratio:16/9;background:#fff;border-bottom:1px solid var(--line)}
 .viewer-media video{object-fit:contain}
+/* The hand renders are 4:3; the dialog narrows so the taller clip still fits the screen. */
+.ratio-4-3 .tile,.ratio-4-3 .viewer-media{aspect-ratio:4/3}
+.ratio-4-3 .viewer{width:min(880px,calc(100vw - 32px),calc((100vh - 140px)*4/3))}
 .viewer-info{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:16px 20px}
 .viewer-info h2{font:400 24px/1.2 var(--serif)}
 .viewer-info p{margin-top:3px;font-size:13px;color:var(--muted)}

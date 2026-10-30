@@ -224,132 +224,436 @@
     "sourceFile": "humanoid_new/10月30日(1).mov"
   },
   {
-    "id": "oakbi_934_pour",
-    "title": "Pour",
+    "id": "sharpa_oakbi_511_pour_in_lab",
+    "title": "Pour in lab",
     "group": "sim-dex",
-    "src": "media/oakink2/videos/oakbi_934_pour.mp4",
-    "poster": "media/oakink2/posters/oakbi_934_pour.jpg",
-    "speed": 1.6
-  },
-  {
-    "id": "oakbi_741_stir",
-    "title": "Stir",
-    "group": "sim-dex",
-    "src": "media/oakink2/videos/oakbi_741_stir.mp4",
-    "poster": "media/oakink2/posters/oakbi_741_stir.jpg",
-    "speed": 1.3
-  },
-  {
-    "id": "oakbi_315_cut",
-    "title": "Cut",
-    "group": "sim-dex",
-    "src": "media/oakink2/videos/oakbi_315_cut.mp4",
-    "poster": "media/oakink2/posters/oakbi_315_cut.jpg",
-    "speed": 1.6
-  },
-  {
-    "id": "oakbi_100_spread",
-    "title": "Spread",
-    "group": "sim-dex",
-    "src": "media/oakink2/videos/oakbi_100_spread.mp4",
-    "poster": "media/oakink2/posters/oakbi_100_spread.jpg",
-    "speed": 1.8
-  },
-  {
-    "id": "oakbi_673_squeeze_tooth_paste",
-    "title": "Squeeze tooth paste",
-    "group": "sim-dex",
-    "src": "media/oakink2/videos/oakbi_673_squeeze_tooth_paste.mp4",
-    "poster": "media/oakink2/posters/oakbi_673_squeeze_tooth_paste.jpg",
-    "speed": 1.2
-  },
-  {
-    "id": "oakbi_020_screw",
-    "title": "Screw",
-    "group": "sim-dex",
-    "src": "media/oakink2/videos/oakbi_020_screw.mp4",
-    "poster": "media/oakink2/posters/oakbi_020_screw.jpg",
-    "speed": 2.7
-  },
-  {
-    "id": "oakbi_1032_uncap",
-    "title": "Uncap",
-    "group": "sim-dex",
-    "src": "media/oakink2/videos/oakbi_1032_uncap.mp4",
-    "poster": "media/oakink2/posters/oakbi_1032_uncap.jpg",
-    "speed": 1.0
-  },
-  {
-    "id": "oakbi_132_ignite_alcohol_lamp",
-    "title": "Ignite alcohol lamp",
-    "group": "sim-dex",
-    "src": "media/oakink2/videos/oakbi_132_ignite_alcohol_lamp.mp4",
-    "poster": "media/oakink2/posters/oakbi_132_ignite_alcohol_lamp.jpg",
-    "speed": 1.2
-  },
-  {
-    "id": "oakbi_034_insert_usb",
-    "title": "Insert USB",
-    "group": "sim-dex",
-    "src": "media/oakink2/videos/oakbi_034_insert_usb.mp4",
-    "poster": "media/oakink2/posters/oakbi_034_insert_usb.jpg",
+    "robot": "sharpa",
+    "src": "media/oakink2/videos/sharpa_oakbi_511_pour_in_lab.mp4",
+    "poster": "media/oakink2/posters/sharpa_oakbi_511_pour_in_lab.jpg",
     "speed": 1.4
   },
   {
-    "id": "oakbi_039_plug_in_power_plug",
-    "title": "Plug in power plug",
+    "id": "sharpa_oakbi_175_remove_power_plug",
+    "title": "Remove power plug",
     "group": "sim-dex",
-    "src": "media/oakink2/videos/oakbi_039_plug_in_power_plug.mp4",
-    "poster": "media/oakink2/posters/oakbi_039_plug_in_power_plug.jpg",
-    "speed": 1.2
+    "robot": "sharpa",
+    "src": "media/oakink2/videos/sharpa_oakbi_175_remove_power_plug.mp4",
+    "poster": "media/oakink2/posters/sharpa_oakbi_175_remove_power_plug.jpg",
+    "speed": 1
   },
   {
-    "id": "oakbi_289_scoop",
-    "title": "Scoop",
-    "group": "sim-dex",
-    "src": "media/oakink2/videos/oakbi_289_scoop.mp4",
-    "poster": "media/oakink2/posters/oakbi_289_scoop.jpg",
-    "speed": 2.9
-  },
-  {
-    "id": "oakbi_009_wipe",
-    "title": "Wipe",
-    "group": "sim-dex",
-    "src": "media/oakink2/videos/oakbi_009_wipe.mp4",
-    "poster": "media/oakink2/posters/oakbi_009_wipe.jpg",
-    "speed": 3.6
-  },
-  {
-    "id": "oakbi_501_brush_whiteboard",
+    "id": "sharpa_oakbi_170_brush_whiteboard",
     "title": "Brush whiteboard",
     "group": "sim-dex",
-    "src": "media/oakink2/videos/oakbi_501_brush_whiteboard.mp4",
-    "poster": "media/oakink2/posters/oakbi_501_brush_whiteboard.jpg",
-    "speed": 1.3
+    "robot": "sharpa",
+    "src": "media/oakink2/videos/sharpa_oakbi_170_brush_whiteboard.mp4",
+    "poster": "media/oakink2/posters/sharpa_oakbi_170_brush_whiteboard.jpg",
+    "speed": 1.7
   },
   {
-    "id": "oakbi_1107_remove_lid",
-    "title": "Remove lid",
-    "group": "sim-dex",
-    "src": "media/oakink2/videos/oakbi_1107_remove_lid.mp4",
-    "poster": "media/oakink2/posters/oakbi_1107_remove_lid.jpg",
-    "speed": 1.2
-  },
-  {
-    "id": "oakbi_245_pull_out_drawer",
+    "id": "sharpa_oakextra_63ca8_5_pull_out_drawer",
     "title": "Pull out drawer",
     "group": "sim-dex",
-    "src": "media/oakink2/videos/oakbi_245_pull_out_drawer.mp4",
-    "poster": "media/oakink2/posters/oakbi_245_pull_out_drawer.jpg",
-    "speed": 1.0
+    "robot": "sharpa",
+    "src": "media/oakink2/videos/sharpa_oakextra_63ca8_5_pull_out_drawer.mp4",
+    "poster": "media/oakink2/posters/sharpa_oakextra_63ca8_5_pull_out_drawer.jpg",
+    "speed": 1
   },
   {
-    "id": "oakbi_1233_open_gate",
-    "title": "Open gate",
+    "id": "sharpa_oakbi_632_scoop",
+    "title": "Scoop",
     "group": "sim-dex",
-    "src": "media/oakink2/videos/oakbi_1233_open_gate.mp4",
-    "poster": "media/oakink2/posters/oakbi_1233_open_gate.jpg",
-    "speed": 1.0
+    "robot": "sharpa",
+    "src": "media/oakink2/videos/sharpa_oakbi_632_scoop.mp4",
+    "poster": "media/oakink2/posters/sharpa_oakbi_632_scoop.jpg",
+    "speed": 2.3
+  },
+  {
+    "id": "sharpa_oakbi_701_cut",
+    "title": "Cut",
+    "group": "sim-dex",
+    "robot": "sharpa",
+    "src": "media/oakink2/videos/sharpa_oakbi_701_cut.mp4",
+    "poster": "media/oakink2/posters/sharpa_oakbi_701_cut.jpg",
+    "speed": 1.9
+  },
+  {
+    "id": "sharpa_oakbi_246_swap",
+    "title": "Swap",
+    "group": "sim-dex",
+    "robot": "sharpa",
+    "src": "media/oakink2/videos/sharpa_oakbi_246_swap.mp4",
+    "poster": "media/oakink2/posters/sharpa_oakbi_246_swap.jpg",
+    "speed": 1
+  },
+  {
+    "id": "sharpa_oakbi_082_hold_test_tube",
+    "title": "Hold test tube",
+    "group": "sim-dex",
+    "robot": "sharpa",
+    "src": "media/oakink2/videos/sharpa_oakbi_082_hold_test_tube.mp4",
+    "poster": "media/oakink2/posters/sharpa_oakbi_082_hold_test_tube.jpg",
+    "speed": 1
+  },
+  {
+    "id": "sharpa_oakbi_1108_close_gate",
+    "title": "Close gate",
+    "group": "sim-dex",
+    "robot": "sharpa",
+    "src": "media/oakink2/videos/sharpa_oakbi_1108_close_gate.mp4",
+    "poster": "media/oakink2/posters/sharpa_oakbi_1108_close_gate.jpg",
+    "speed": 1.1
+  },
+  {
+    "id": "sharpa_oakbi_538_use_keyboard",
+    "title": "Use keyboard",
+    "group": "sim-dex",
+    "robot": "sharpa",
+    "src": "media/oakink2/videos/sharpa_oakbi_538_use_keyboard.mp4",
+    "poster": "media/oakink2/posters/sharpa_oakbi_538_use_keyboard.jpg",
+    "speed": 1
+  },
+  {
+    "id": "sharpa_oakbi_1106_put_on_lid",
+    "title": "Put on lid",
+    "group": "sim-dex",
+    "robot": "sharpa",
+    "src": "media/oakink2/videos/sharpa_oakbi_1106_put_on_lid.mp4",
+    "poster": "media/oakink2/posters/sharpa_oakbi_1106_put_on_lid.jpg",
+    "speed": 1
+  },
+  {
+    "id": "sharpa_oakbi_077_swap",
+    "title": "Swap",
+    "group": "sim-dex",
+    "robot": "sharpa",
+    "src": "media/oakink2/videos/sharpa_oakbi_077_swap.mp4",
+    "poster": "media/oakink2/posters/sharpa_oakbi_077_swap.jpg",
+    "speed": 1
+  },
+  {
+    "id": "sharpa_oakbi_1160_pour_in_lab",
+    "title": "Pour in lab",
+    "group": "sim-dex",
+    "robot": "sharpa",
+    "src": "media/oakink2/videos/sharpa_oakbi_1160_pour_in_lab.mp4",
+    "poster": "media/oakink2/posters/sharpa_oakbi_1160_pour_in_lab.jpg",
+    "speed": 1
+  },
+  {
+    "id": "sharpa_oakbi_516_pour_in_lab",
+    "title": "Pour in lab",
+    "group": "sim-dex",
+    "robot": "sharpa",
+    "src": "media/oakink2/videos/sharpa_oakbi_516_pour_in_lab.mp4",
+    "poster": "media/oakink2/posters/sharpa_oakbi_516_pour_in_lab.jpg",
+    "speed": 1
+  },
+  {
+    "id": "sharpa_oakbi_095_hold_test_tube",
+    "title": "Hold test tube",
+    "group": "sim-dex",
+    "robot": "sharpa",
+    "src": "media/oakink2/videos/sharpa_oakbi_095_hold_test_tube.mp4",
+    "poster": "media/oakink2/posters/sharpa_oakbi_095_hold_test_tube.jpg",
+    "speed": 1
+  },
+  {
+    "id": "sharpa_oakbi_857_hold_test_tube",
+    "title": "Hold test tube",
+    "group": "sim-dex",
+    "robot": "sharpa",
+    "src": "media/oakink2/videos/sharpa_oakbi_857_hold_test_tube.mp4",
+    "poster": "media/oakink2/posters/sharpa_oakbi_857_hold_test_tube.jpg",
+    "speed": 1
+  },
+  {
+    "id": "xhand_oakbi_1270_pour_in_lab",
+    "title": "Pour in lab",
+    "group": "sim-dex",
+    "robot": "xhand",
+    "src": "media/oakink2/videos/xhand_oakbi_1270_pour_in_lab.mp4",
+    "poster": "media/oakink2/posters/xhand_oakbi_1270_pour_in_lab.jpg",
+    "speed": 1
+  },
+  {
+    "id": "xhand_oakextra_63ca8_5_pull_out_drawer",
+    "title": "Pull out drawer",
+    "group": "sim-dex",
+    "robot": "xhand",
+    "src": "media/oakink2/videos/xhand_oakextra_63ca8_5_pull_out_drawer.mp4",
+    "poster": "media/oakink2/posters/xhand_oakextra_63ca8_5_pull_out_drawer.jpg",
+    "speed": 1
+  },
+  {
+    "id": "xhand_oakbi_226_stir",
+    "title": "Stir",
+    "group": "sim-dex",
+    "robot": "xhand",
+    "src": "media/oakink2/videos/xhand_oakbi_226_stir.mp4",
+    "poster": "media/oakink2/posters/xhand_oakbi_226_stir.jpg",
+    "speed": 1
+  },
+  {
+    "id": "xhand_oakbi_1008_cut",
+    "title": "Cut",
+    "group": "sim-dex",
+    "robot": "xhand",
+    "src": "media/oakink2/videos/xhand_oakbi_1008_cut.mp4",
+    "poster": "media/oakink2/posters/xhand_oakbi_1008_cut.jpg",
+    "speed": 1
+  },
+  {
+    "id": "xhand_oakbi_751_insert_usb",
+    "title": "Insert USB",
+    "group": "sim-dex",
+    "robot": "xhand",
+    "src": "media/oakink2/videos/xhand_oakbi_751_insert_usb.mp4",
+    "poster": "media/oakink2/posters/xhand_oakbi_751_insert_usb.jpg",
+    "speed": 1
+  },
+  {
+    "id": "xhand_oakbi_662_brush_whiteboard",
+    "title": "Brush whiteboard",
+    "group": "sim-dex",
+    "robot": "xhand",
+    "src": "media/oakink2/videos/xhand_oakbi_662_brush_whiteboard.mp4",
+    "poster": "media/oakink2/posters/xhand_oakbi_662_brush_whiteboard.jpg",
+    "speed": 1
+  },
+  {
+    "id": "xhand_oakbi_077_swap",
+    "title": "Swap",
+    "group": "sim-dex",
+    "robot": "xhand",
+    "src": "media/oakink2/videos/xhand_oakbi_077_swap.mp4",
+    "poster": "media/oakink2/posters/xhand_oakbi_077_swap.jpg",
+    "speed": 1
+  },
+  {
+    "id": "xhand_oakbi_1048_hold_test_tube",
+    "title": "Hold test tube",
+    "group": "sim-dex",
+    "robot": "xhand",
+    "src": "media/oakink2/videos/xhand_oakbi_1048_hold_test_tube.mp4",
+    "poster": "media/oakink2/posters/xhand_oakbi_1048_hold_test_tube.jpg",
+    "speed": 1
+  },
+  {
+    "id": "xhand_oakbi_480_scrape",
+    "title": "Scrape",
+    "group": "sim-dex",
+    "robot": "xhand",
+    "src": "media/oakink2/videos/xhand_oakbi_480_scrape.mp4",
+    "poster": "media/oakink2/posters/xhand_oakbi_480_scrape.jpg",
+    "speed": 1
+  },
+  {
+    "id": "xhand_oakbi_1106_put_on_lid",
+    "title": "Put on lid",
+    "group": "sim-dex",
+    "robot": "xhand",
+    "src": "media/oakink2/videos/xhand_oakbi_1106_put_on_lid.mp4",
+    "poster": "media/oakink2/posters/xhand_oakbi_1106_put_on_lid.jpg",
+    "speed": 1
+  },
+  {
+    "id": "xhand_oakbi_538_use_keyboard",
+    "title": "Use keyboard",
+    "group": "sim-dex",
+    "robot": "xhand",
+    "src": "media/oakink2/videos/xhand_oakbi_538_use_keyboard.mp4",
+    "poster": "media/oakink2/posters/xhand_oakbi_538_use_keyboard.jpg",
+    "speed": 1
+  },
+  {
+    "id": "xhand_oakbi_365_flip_close_tooth_paste_cap",
+    "title": "Flip close tooth paste cap",
+    "group": "sim-dex",
+    "robot": "xhand",
+    "src": "media/oakink2/videos/xhand_oakbi_365_flip_close_tooth_paste_cap.mp4",
+    "poster": "media/oakink2/posters/xhand_oakbi_365_flip_close_tooth_paste_cap.jpg",
+    "speed": 1.1
+  },
+  {
+    "id": "xhand_oakbi_004_close_gate",
+    "title": "Close gate",
+    "group": "sim-dex",
+    "robot": "xhand",
+    "src": "media/oakink2/videos/xhand_oakbi_004_close_gate.mp4",
+    "poster": "media/oakink2/posters/xhand_oakbi_004_close_gate.jpg",
+    "speed": 1
+  },
+  {
+    "id": "xhand_oakbi_651_write_on_whiteboard",
+    "title": "Write on whiteboard",
+    "group": "sim-dex",
+    "robot": "xhand",
+    "src": "media/oakink2/videos/xhand_oakbi_651_write_on_whiteboard.mp4",
+    "poster": "media/oakink2/posters/xhand_oakbi_651_write_on_whiteboard.jpg",
+    "speed": 1.7
+  },
+  {
+    "id": "xhand_oakbi_380_rearrange",
+    "title": "Rearrange",
+    "group": "sim-dex",
+    "robot": "xhand",
+    "src": "media/oakink2/videos/xhand_oakbi_380_rearrange.mp4",
+    "poster": "media/oakink2/posters/xhand_oakbi_380_rearrange.jpg",
+    "speed": 1
+  },
+  {
+    "id": "xhand_oakbi_1188_take_outside",
+    "title": "Take outside",
+    "group": "sim-dex",
+    "robot": "xhand",
+    "src": "media/oakink2/videos/xhand_oakbi_1188_take_outside.mp4",
+    "poster": "media/oakink2/posters/xhand_oakbi_1188_take_outside.jpg",
+    "speed": 1
+  },
+  {
+    "id": "wuji_oakbi_1020_pour_in_lab",
+    "title": "Pour in lab",
+    "group": "sim-dex",
+    "robot": "wuji",
+    "src": "media/oakink2/videos/wuji_oakbi_1020_pour_in_lab.mp4",
+    "poster": "media/oakink2/posters/wuji_oakbi_1020_pour_in_lab.jpg",
+    "speed": 1
+  },
+  {
+    "id": "wuji_oakextra_63ca8_5_pull_out_drawer",
+    "title": "Pull out drawer",
+    "group": "sim-dex",
+    "robot": "wuji",
+    "src": "media/oakink2/videos/wuji_oakextra_63ca8_5_pull_out_drawer.mp4",
+    "poster": "media/oakink2/posters/wuji_oakextra_63ca8_5_pull_out_drawer.jpg",
+    "speed": 1
+  },
+  {
+    "id": "wuji_oakbi_1134_cut",
+    "title": "Cut",
+    "group": "sim-dex",
+    "robot": "wuji",
+    "src": "media/oakink2/videos/wuji_oakbi_1134_cut.mp4",
+    "poster": "media/oakink2/posters/wuji_oakbi_1134_cut.jpg",
+    "speed": 1
+  },
+  {
+    "id": "wuji_oakbi_937_hold_test_tube",
+    "title": "Hold test tube",
+    "group": "sim-dex",
+    "robot": "wuji",
+    "src": "media/oakink2/videos/wuji_oakbi_937_hold_test_tube.mp4",
+    "poster": "media/oakink2/posters/wuji_oakbi_937_hold_test_tube.jpg",
+    "speed": 1
+  },
+  {
+    "id": "wuji_oakbi_765_use_keyboard",
+    "title": "Use keyboard",
+    "group": "sim-dex",
+    "robot": "wuji",
+    "src": "media/oakink2/videos/wuji_oakbi_765_use_keyboard.mp4",
+    "poster": "media/oakink2/posters/wuji_oakbi_765_use_keyboard.jpg",
+    "speed": 1
+  },
+  {
+    "id": "wuji_oakextra_88843_3_close_gate",
+    "title": "Close gate",
+    "group": "sim-dex",
+    "robot": "wuji",
+    "src": "media/oakink2/videos/wuji_oakextra_88843_3_close_gate.mp4",
+    "poster": "media/oakink2/posters/wuji_oakextra_88843_3_close_gate.jpg",
+    "speed": 1
+  },
+  {
+    "id": "wuji_oakbi_168_put_on_lid",
+    "title": "Put on lid",
+    "group": "sim-dex",
+    "robot": "wuji",
+    "src": "media/oakink2/videos/wuji_oakbi_168_put_on_lid.mp4",
+    "poster": "media/oakink2/posters/wuji_oakbi_168_put_on_lid.jpg",
+    "speed": 1
+  },
+  {
+    "id": "wuji_oakbi_076_pour_in_lab",
+    "title": "Pour in lab",
+    "group": "sim-dex",
+    "robot": "wuji",
+    "src": "media/oakink2/videos/wuji_oakbi_076_pour_in_lab.mp4",
+    "poster": "media/oakink2/posters/wuji_oakbi_076_pour_in_lab.jpg",
+    "speed": 1
+  },
+  {
+    "id": "wuji_oakbi_516_pour_in_lab",
+    "title": "Pour in lab",
+    "group": "sim-dex",
+    "robot": "wuji",
+    "src": "media/oakink2/videos/wuji_oakbi_516_pour_in_lab.mp4",
+    "poster": "media/oakink2/posters/wuji_oakbi_516_pour_in_lab.jpg",
+    "speed": 1
+  },
+  {
+    "id": "wuji_oakbi_078_hold_test_tube",
+    "title": "Hold test tube",
+    "group": "sim-dex",
+    "robot": "wuji",
+    "src": "media/oakink2/videos/wuji_oakbi_078_hold_test_tube.mp4",
+    "poster": "media/oakink2/posters/wuji_oakbi_078_hold_test_tube.jpg",
+    "speed": 1
+  },
+  {
+    "id": "wuji_oakbi_517_hold_test_tube",
+    "title": "Hold test tube",
+    "group": "sim-dex",
+    "robot": "wuji",
+    "src": "media/oakink2/videos/wuji_oakbi_517_hold_test_tube.mp4",
+    "poster": "media/oakink2/posters/wuji_oakbi_517_hold_test_tube.jpg",
+    "speed": 1
+  },
+  {
+    "id": "wuji_oakbi_857_hold_test_tube",
+    "title": "Hold test tube",
+    "group": "sim-dex",
+    "robot": "wuji",
+    "src": "media/oakink2/videos/wuji_oakbi_857_hold_test_tube.mp4",
+    "poster": "media/oakink2/posters/wuji_oakbi_857_hold_test_tube.jpg",
+    "speed": 1
+  },
+  {
+    "id": "wuji_oakbi_095_hold_test_tube",
+    "title": "Hold test tube",
+    "group": "sim-dex",
+    "robot": "wuji",
+    "src": "media/oakink2/videos/wuji_oakbi_095_hold_test_tube.mp4",
+    "poster": "media/oakink2/posters/wuji_oakbi_095_hold_test_tube.jpg",
+    "speed": 1
+  },
+  {
+    "id": "wuji_oakbi_538_use_keyboard",
+    "title": "Use keyboard",
+    "group": "sim-dex",
+    "robot": "wuji",
+    "src": "media/oakink2/videos/wuji_oakbi_538_use_keyboard.mp4",
+    "poster": "media/oakink2/posters/wuji_oakbi_538_use_keyboard.jpg",
+    "speed": 1
+  },
+  {
+    "id": "wuji_oakbi_090_hold_test_tube",
+    "title": "Hold test tube",
+    "group": "sim-dex",
+    "robot": "wuji",
+    "src": "media/oakink2/videos/wuji_oakbi_090_hold_test_tube.mp4",
+    "poster": "media/oakink2/posters/wuji_oakbi_090_hold_test_tube.jpg",
+    "speed": 1
+  },
+  {
+    "id": "wuji_oakbi_378_close_gate",
+    "title": "Close gate",
+    "group": "sim-dex",
+    "robot": "wuji",
+    "src": "media/oakink2/videos/wuji_oakbi_378_close_gate.mp4",
+    "poster": "media/oakink2/posters/wuji_oakbi_378_close_gate.jpg",
+    "speed": 1
   },
   {
     "id": "g1_object_floorlamp_sub14_floorlamp_004",
