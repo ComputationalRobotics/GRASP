@@ -134,13 +134,13 @@
     "sourceFile": "kick_soccer.mov"
   },
   {
-    "id": "real-new-06",
-    "title": "Humanoid demonstration 6",
+    "id": "real-pumpkin-carry",
+    "title": "Carrying a pumpkin",
     "group": "humanoid",
-    "src": "media/real-humanoid/new-06.mp4",
-    "poster": "media/real-humanoid/new-06.jpg",
+    "src": "media/real-humanoid/pumpkin-carry.mp4",
+    "poster": "media/real-humanoid/pumpkin-carry.jpg",
     "speed": 1,
-    "sourceFile": "humanoid_new/10月30日(5).mov"
+    "sourceFile": "humanoid_new/搬南瓜.mov"
   },
   {
     "id": "real-new-05",
