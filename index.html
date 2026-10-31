@@ -179,7 +179,7 @@
 </tbody>
    </table>
   </div>
-  <p class="results-note" id="dex-results-note">Baseline values are reported in <a href="https://arxiv.org/abs/2609.35318" target="_blank" rel="noopener">DexAgent, Table 2 (OakInk)</a>, on that work’s clips; they were not rerun on the GRASP task set. GRASP evaluates the complete 1,352-task OakInk2 collection. Evaluation sets differ. Bold indicates the best reported value, including ties.</p>
+  <p class="results-note" id="dex-results-note">GRASP evaluates the complete 1,352-task OakInk2 collection. Evaluation sets differ. Bold indicates the best reported value, including ties.</p>
   <details class="results-protocol"><summary>Evaluation details</summary><p>A GRASP task succeeds when mean object position error is below 10 cm and mean rotation error is below 0.5 rad. Execution failures count as failures. Error means use jointly finite position–rotation error pairs. Baseline success rates follow their original reporting.</p></details>
  </div>
  <div id="results-humanoid" class="results-panel" role="tabpanel" aria-labelledby="results-tab-humanoid" tabindex="0" hidden>
@@ -204,7 +204,7 @@
 </tbody>
    </table>
   </div>
-  <p class="results-note" id="humanoid-results-note">GMR and SPIDER values are reported in <a href="https://arxiv.org/abs/2511.09484" target="_blank" rel="noopener">SPIDER, Table 2</a>. GRASP uses SPIDER’s Unitree G1 scenes, tracking objective, and error definitions. Object errors apply to the box in OMOMO only. Bold indicates the lowest reported error within each dataset.</p>
+  <p class="results-note" id="humanoid-results-note">GRASP uses SPIDER’s Unitree G1 scenes, tracking objective, and error definitions. Object errors apply to the box in OMOMO only. Bold indicates the lowest reported error within each dataset.</p>
   <details class="results-protocol"><summary>Evaluation details</summary><p>Joint errors are joint-angle difference norms; translation and orientation errors are pelvis-position and quaternion difference norms, averaged over 60 Hz frames. Object errors use the corresponding object poses.</p></details>
  </div>
  <section class="policy-learning" id="policy-learning" aria-labelledby="policy-learning-heading">
