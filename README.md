@@ -87,3 +87,7 @@ The independent **Correct & reuse** module shows a guided proposal being evaluat
 ## Public resource links
 
 The Code and Dataset buttons link to https://github.com/ComputationalRobotics/GRASP_code and https://huggingface.co/datasets/1duahcua9/GRASP-OakInk2, respectively. Both open in a new tab. The v13 film uses the Hugging Face address in the dataset scene (178–186 seconds) and includes both direct resource URLs alongside the project homepage in the closing scene (186–194 seconds). All earlier scenes and the 3:14 duration are unchanged.
+
+## Paper PDF
+
+The Paper button opens `assets/GRASP.pdf` in a new tab. This is the full 24-page paper, including references and appendix, compiled from Overleaf commit `99b91da` on 2026-10-31. It includes the approved humanoid figure layout and the latest Wuji results.
