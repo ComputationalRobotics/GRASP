@@ -168,3 +168,8 @@
 .policy-curves>figcaption a{color:var(--crimson);font-weight:600;white-space:nowrap;flex-shrink:0}
 .policy-curves>figcaption a:hover{text-decoration:underline;text-underline-offset:3px}
 @media(max-width:650px){.policy-learning{margin-top:42px;padding-top:28px}.policy-learning>h3{font-size:24px}.policy-study{margin-top:26px}.policy-study>h4{font-size:17px;margin-bottom:16px}.policy-study+.policy-study{margin-top:36px;padding-top:26px}.policy-video-pair{gap:12px}.policy-video figcaption{font-size:10px;margin-bottom:8px}.policy-curves{margin-top:18px}.policy-curve-scroll{padding:14px 8px 8px}.policy-curves>figcaption{display:block;font-size:10px;margin-top:12px}.policy-curves>figcaption a{display:inline-block;margin-top:8px}}
+/* Credit line centered under the footer links. */
+footer{flex-wrap:wrap}
+.footer-credit{flex-basis:100%;margin:18px 0 0;text-align:center;font-size:10px;color:#8b8173}
+.footer-credit a{text-decoration:underline;text-underline-offset:2px}
+.footer-credit a:hover{color:var(--crimson)}
