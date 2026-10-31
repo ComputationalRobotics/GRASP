@@ -119,3 +119,7 @@ Added a math-capable fallback for the prime in z′ and J(z′), and alpha in th
 ## Video v20: latest paper data
 
 The dexterous-retargeting results chart reads values from Overleaf commit `7c29071`, updating GRASP success from 94.1% to 94.2%. Position and rotation errors retain the paper table precision (0.03 m and 0.12 rad). All humanoid results and both RL curves were checked against the current paper. The paired reference captions no longer claim original playback speed. Duration remains 119 seconds; the soundtrack and all section timings are preserved.
+
+## Website results synchronized with paper
+
+Checked against Overleaf commit `3622baf` on 2026-10-31. All 21 dexterous-retargeting and 45 humanoid table cells match the paper, including unavailable entries. GRASP Sharpa success and the abstract now report 94.2%; object errors preserve the paper table rounding (0.03 m, 0.12 rad).
