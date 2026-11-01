@@ -123,3 +123,5 @@ The dexterous-retargeting results chart reads values from Overleaf commit `7c290
 ## Website results synchronized with paper
 
 Checked against Overleaf commit `3622baf` on 2026-10-31. All 21 dexterous-retargeting and 45 humanoid table cells match the paper, including unavailable entries. GRASP Sharpa success and the abstract now report 94.2%; object errors preserve the paper table rounding (0.03 m, 0.12 rad).
+
+The dexterous Results panel includes an animated Cross-embodiment chart (`#cross-embodiment`), sourced from the cross-embodiment table and generated macros in Overleaf revision `34f0295`. Three zero-baseline bar charts compare Sharpa, Wuji and XHand success rates and object errors. Mean/Median switches error statistics; Replay restarts the entrance animation. Charts reveal independently on scroll, stack on mobile, respect reduced motion, and retain final numbers without JavaScript.

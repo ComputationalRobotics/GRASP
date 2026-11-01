@@ -90,3 +90,39 @@ copyCitation.addEventListener('click',async()=>{
   try{await navigator.clipboard.writeText(document.querySelector('#citation-text').textContent.trim());status.textContent='BibTeX copied.';}
   catch{status.textContent='Select the citation below and copy it.';document.querySelector('.citation-code').focus();}
 });
+
+// Cross-embodiment table, Overleaf 34f0295. HTML retains final values without JavaScript.
+const crossSection=document.querySelector('#cross-embodiment');
+if(crossSection){
+  const charts=[...crossSection.querySelectorAll('.cross-chart')];
+  const reveal=chart=>chart.classList.remove('is-pending');
+  const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
+    if(entry.isIntersecting){reveal(entry.target);observer.unobserve(entry.target);}
+  }),{threshold:.35});
+  function replayCross(){
+    charts.forEach(chart=>{
+      observer.unobserve(chart);
+      if(reduceMotion.matches){reveal(chart);return;}
+      chart.classList.add('is-pending');
+    });
+    // Commit the zero-width state before re-observing visible charts.
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{
+      if(!reduceMotion.matches)charts.forEach(chart=>observer.observe(chart));
+    }));
+  }
+  crossSection.querySelectorAll('[data-stat]').forEach(button=>button.addEventListener('click',()=>{
+    const stat=button.dataset.stat;
+    crossSection.querySelectorAll('[data-stat]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+    charts.filter(chart=>chart.dataset.metric!=='success').forEach(chart=>{
+      chart.querySelectorAll('.cross-row').forEach(row=>{
+        const value=Number(row.dataset[stat]);
+        row.querySelector('.cross-bar').style.width=`${value/Number(chart.dataset.max)*100}%`;
+        row.querySelector('.cross-value').textContent=value.toFixed(Number(chart.dataset.precision));
+      });
+    });
+    crossSection.querySelector('#cross-stat-note').textContent=`Bars show ${stat} object errors.`;
+  }));
+  crossSection.querySelector('.cross-replay').addEventListener('click',replayCross);
+  reduceMotion.addEventListener('change',()=>{if(reduceMotion.matches){observer.disconnect();charts.forEach(reveal);}});
+  replayCross();
+}

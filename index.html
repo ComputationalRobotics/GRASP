@@ -5,7 +5,7 @@
 <meta name="description" content="GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting. Real-world dexterous-hand and humanoid demonstrations.">
 <meta name="theme-color" content="#080808"><meta property="og:title" content="GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting"><meta property="og:type" content="website">
 <title>GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting</title>
-<link rel="icon" href="assets/favicon.svg?v=pumpkin1" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=22"><script defer src="app.js?v=13"></script><link rel="stylesheet" href="assets/method-insight.css?v=2"><script defer src="assets/method-insight.js?v=2"></script>
+<link rel="icon" href="assets/favicon.svg?v=pumpkin1" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=23"><script defer src="app.js?v=14"></script><link rel="stylesheet" href="assets/method-insight.css?v=2"><script defer src="assets/method-insight.js?v=2"></script>
 </head>
 <body>
 <a class="skip-link" href="#tasks">Skip to demonstrations</a>
@@ -185,6 +185,33 @@
   </div>
   <p class="results-note" id="dex-results-note">GRASP evaluates the complete 1,352-task OakInk2 collection. Evaluation sets differ. Bold indicates the best reported value, including ties.</p>
   <details class="results-protocol"><summary>Evaluation details</summary><p>A GRASP task succeeds when mean object position error is below 10 cm and mean rotation error is below 0.5 rad. Execution failures count as failures. Error means use jointly finite position–rotation error pairs. Baseline success rates follow their original reporting.</p></details>
+
+  <section class="cross-embodiment" id="cross-embodiment" aria-labelledby="cross-heading">
+   <div class="cross-header"><div><p class="cross-eyebrow">One optimizer · Three hands</p><h3 id="cross-heading">Cross-embodiment</h3><p class="cross-subtitle">The same optimizer configuration across 1,352 OakInk2 tasks per hand.</p></div>
+    <div class="cross-controls"><div class="cross-stat" role="group" aria-label="Error statistic"><button type="button" data-stat="mean" aria-pressed="true">Mean</button><button type="button" data-stat="median" aria-pressed="false">Median</button></div><button type="button" class="cross-replay" aria-label="Replay cross-embodiment chart animation">↻ Replay</button></div>
+   </div>
+   <div class="cross-charts">
+    <figure class="cross-chart" data-metric="success" data-max="100" data-precision="1" aria-labelledby="cross-success-title"><figcaption id="cross-success-title">Success rate<span>% · Higher is better ↑</span></figcaption>
+     <div class="cross-row cross-hand-0" data-mean="94.2" data-median="94.2" style="--row:0"><span class="cross-hand">Sharpa</span><div class="cross-track" aria-hidden="true"><span class="cross-bar" style="width:94.2000%"></span></div><span class="cross-value">94.2%</span></div>
+     <div class="cross-row cross-hand-1" data-mean="92.8" data-median="92.8" style="--row:1"><span class="cross-hand">Wuji</span><div class="cross-track" aria-hidden="true"><span class="cross-bar" style="width:92.8000%"></span></div><span class="cross-value">92.8%</span></div>
+     <div class="cross-row cross-hand-2" data-mean="95.0" data-median="95.0" style="--row:2"><span class="cross-hand">XHand</span><div class="cross-track" aria-hidden="true"><span class="cross-bar" style="width:95.0000%"></span></div><span class="cross-value">95.0%</span></div>
+     <div class="cross-axis" aria-hidden="true"><span>0</span><span>50</span><span>100</span></div>
+    </figure>
+    <figure class="cross-chart" data-metric="position" data-max="4" data-precision="2" aria-labelledby="cross-position-title"><figcaption id="cross-position-title">Object position error<span>cm · Lower is better ↓</span></figcaption>
+     <div class="cross-row cross-hand-0" data-mean="2.87" data-median="2.17" style="--row:0"><span class="cross-hand">Sharpa</span><div class="cross-track" aria-hidden="true"><span class="cross-bar" style="width:71.7500%"></span></div><span class="cross-value">2.87</span></div>
+     <div class="cross-row cross-hand-1" data-mean="2.87" data-median="2.02" style="--row:1"><span class="cross-hand">Wuji</span><div class="cross-track" aria-hidden="true"><span class="cross-bar" style="width:71.7500%"></span></div><span class="cross-value">2.87</span></div>
+     <div class="cross-row cross-hand-2" data-mean="2.87" data-median="2.08" style="--row:2"><span class="cross-hand">XHand</span><div class="cross-track" aria-hidden="true"><span class="cross-bar" style="width:71.7500%"></span></div><span class="cross-value">2.87</span></div>
+     <div class="cross-axis" aria-hidden="true"><span>0</span><span>2</span><span>4</span></div>
+    </figure>
+    <figure class="cross-chart" data-metric="rotation" data-max="0.16" data-precision="3" aria-labelledby="cross-rotation-title"><figcaption id="cross-rotation-title">Object rotation error<span>rad · Lower is better ↓</span></figcaption>
+     <div class="cross-row cross-hand-0" data-mean="0.117" data-median="0.09" style="--row:0"><span class="cross-hand">Sharpa</span><div class="cross-track" aria-hidden="true"><span class="cross-bar" style="width:73.1250%"></span></div><span class="cross-value">0.117</span></div>
+     <div class="cross-row cross-hand-1" data-mean="0.117" data-median="0.086" style="--row:1"><span class="cross-hand">Wuji</span><div class="cross-track" aria-hidden="true"><span class="cross-bar" style="width:73.1250%"></span></div><span class="cross-value">0.117</span></div>
+     <div class="cross-row cross-hand-2" data-mean="0.112" data-median="0.088" style="--row:2"><span class="cross-hand">XHand</span><div class="cross-track" aria-hidden="true"><span class="cross-bar" style="width:70.0000%"></span></div><span class="cross-value">0.112</span></div>
+     <div class="cross-axis" aria-hidden="true"><span>0</span><span>0.08</span><span>0.16</span></div>
+    </figure>
+   </div>
+   <p class="cross-footnote"><span id="cross-stat-note">Bars show mean object errors.</span> Errors use completed trajectories with finite metrics; execution failures count as failures in success rates.</p>
+  </section>
  </div>
  <div id="results-humanoid" class="results-panel" role="tabpanel" aria-labelledby="results-tab-humanoid" tabindex="0" hidden>
   <div class="results-heading"><div><h3>Whole-body motion tracking</h3><p>Unitree G1 · Open-loop robot and object tracking</p></div><span class="results-legend">All errors ↓ &nbsp; Lower is better</span></div>
