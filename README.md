@@ -90,7 +90,7 @@ The Code and Dataset buttons link to https://github.com/ComputationalRobotics/GR
 
 ## Paper PDF
 
-The Paper button opens `assets/GRASP.pdf` in a new tab. This is the full 24-page paper, including references and appendix, compiled from Overleaf commit `99b91da` on 2026-10-31. It includes the approved humanoid figure layout and the latest Wuji results.
+The Paper button opens `assets/GRASP.pdf?v=34f0295` in a new tab. This is the full 24-page paper, including references and appendix, compiled from Overleaf commit `34f0295` on 2026-10-31. It includes the updated Sharpa and Wuji results, the revised cross-embodiment table, and the latest optimization benchmark results and figure.
 
 ## Video v14: title entrance and persistent branding
 
