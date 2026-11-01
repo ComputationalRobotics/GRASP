@@ -91,7 +91,7 @@ copyCitation.addEventListener('click',async()=>{
   catch{status.textContent='Select the citation below and copy it.';document.querySelector('.citation-code').focus();}
 });
 
-// Cross-embodiment table, Overleaf 34f0295. HTML retains final values without JavaScript.
+// Cross-embodiment table, Overleaf a909aeb. HTML retains final values without JavaScript.
 const crossSection=document.querySelector('#cross-embodiment');
 if(crossSection){
   const charts=[...crossSection.querySelectorAll('.cross-chart')];

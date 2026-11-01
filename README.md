@@ -90,7 +90,7 @@ The Code and Dataset buttons link to https://github.com/ComputationalRobotics/GR
 
 ## Paper PDF
 
-The Paper button opens `assets/GRASP.pdf?v=34f0295` in a new tab. This is the full 24-page paper, including references and appendix, compiled from Overleaf commit `34f0295` on 2026-10-31. It includes the updated Sharpa and Wuji results, the revised cross-embodiment table, and the latest optimization benchmark results and figure.
+The Paper button opens `assets/GRASP.pdf?v=a909aeb` in a new tab. This is the full 24-page paper, including references and appendix, compiled from Overleaf commit `a909aeb` on 2026-10-31. It includes the updated Sharpa and Wuji results, the revised cross-embodiment table, and the latest optimization benchmark results and figure.
 
 ## Video v14: title entrance and persistent branding
 
@@ -124,4 +124,4 @@ The dexterous-retargeting results chart reads values from Overleaf commit `7c290
 
 Checked against Overleaf commit `3622baf` on 2026-10-31. All 21 dexterous-retargeting and 45 humanoid table cells match the paper, including unavailable entries. GRASP Sharpa success and the abstract now report 94.2%; object errors preserve the paper table rounding (0.03 m, 0.12 rad).
 
-After the retargeting result panels, an independent section at the same level as Policy learning includes an animated Cross-embodiment chart (`#cross-embodiment`), sourced from the cross-embodiment table and generated macros in Overleaf revision `34f0295`. Three zero-baseline bar charts compare Sharpa, Wuji and XHand success rates and object errors. Mean/Median switches error statistics; Replay restarts the entrance animation. Charts reveal independently on scroll, stack on mobile, respect reduced motion, and retain final numbers without JavaScript.
+After the retargeting result panels, an independent section at the same level as Policy learning includes an animated Cross-embodiment chart (`#cross-embodiment`), sourced from the cross-embodiment table and generated macros in Overleaf revision `a909aeb`. Three zero-baseline bar charts compare Sharpa, Wuji and XHand success rates and object errors. Mean/Median switches error statistics; Replay restarts the entrance animation. Charts reveal independently on scroll, stack on mobile, respect reduced motion, and retain final numbers without JavaScript.
